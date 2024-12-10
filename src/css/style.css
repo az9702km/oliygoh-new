@@ -944,6 +944,10 @@ template {
   --text-color: var(--button-text-color);
   --text-size: var(--button-text-size);
   --text-line-height: var(--button-text-line-height);
+  --border-radius-top-left: var(--button-border-radius-top-left);
+  --border-radius-top-right: var(--button-border-radius-top-right);
+  --border-radius-bottom-right: var(--button-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--button-border-radius-bottom-left);
   display: inlin-flex;
   cursor: pointer;
   padding: var(--padding-top) var(--padding-right) var(--padding-bottom) var(--padding-left);
