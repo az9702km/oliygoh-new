@@ -1,0 +1,16 @@
+---
+const { size, style, classes, id, attrs, disabled } = Astro.props;
+---
+
+<button
+  type="button"
+  class:list={[
+    "btn",
+    style ? `btn--${style}` : "",
+    size ? `btn--${size}` : "",
+    classes,
+  ]}
+  {...id && { id: id }}
+  {...attrs && attrs}
+  disabled={disabled}><slot /></button
+>
