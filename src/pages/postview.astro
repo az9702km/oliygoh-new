@@ -1,0 +1,81 @@
+---
+import Blockquote from "../components/Blockquote.astro";
+import Card from "../components/Card.astro";
+import CardArticle from "../components/CardArticle.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import RelatedNews from "../components/RelatedNews.astro";
+import RelatedNewsList from "../components/RelatedNewsList.astro";
+import ShareSection from "../components/ShareSection.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="py-2xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-start-lg-1 col-lg-6">
+          <div class="d-flex flex-column gap-md mb-2xl">
+            <h1 class="h2">
+              Kontrakt uchun to‘lov soliqqa tortilmaydi: Imtiyozlardan qanday
+              foydalanish mumkin?
+            </h1>
+            <p class="text-on-surface-variant">11-yanvar 11:36</p>
+            <img
+              src="https://static.oliygoh.uz/crop/3/6/832__85_36686679.jpg?t=1737124107"
+              class="w-full"
+              alt=""
+            />
+          </div>
+          <div class="d-flex flex-column gap-lg mb-2xl text-lg">
+            <p>
+              📋 Test sinovida ishtirok etadigan talabgorlarning ro‘yxati,
+              topshiriladigan fanlar va test hududi haqida batafsil ma’lumot PDF
+              faylda ko‘rsatilgan. Faylni my.gov.uz yoki Davlat xizmatlari
+              markazlari orqali berilgan ariza raqami yordamida topishingiz
+              mumkin.
+            </p>
+            <Blockquote />
+            <p>
+              ❗️ Test sinovi talablari: Talabgorlar shaxsini tasdiqlovchi hujjat
+              (pasport yoki ID-karta) bilan kelishlari lozim. Imtihon
+              o‘tkaziladigan joyga belgilangan vaqtdan kechikmasdan yetib
+              kelishlari kerak. 🖋 O‘zgartirishlar uchun murojaat: Agar test
+              hududi yoki tilni o‘zgartirish talab etilsa, quyidagi Telegram bot
+              orqali murojaat qilish mumkin: NostrifikatsiyaBBA_bot. Murojaatda
+              quyidagilarni ko‘rsatish lozim:
+            </p>
+            <ul>
+              <li>Ariza raqami</li>
+              <li>Ism, familiya va sharif.</li>
+            </ul>
+            <p>
+              Manba: Nostrifikatsiya jarayoni va barcha talablar bo‘yicha
+              batafsil ma’lumotni yuqorida ko‘rsatilgan PDF fayldan olishingiz
+              mumkin.
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-lg">
+            <ShareSection />
+            <div class="d-flex flex-column">
+              <h2 class="h4 section-title mb-0">O‘xshash xabarlar</h2>
+              <RelatedNewsList>
+                <RelatedNews />
+                <RelatedNews />
+                <RelatedNews />
+                <RelatedNews />
+              </RelatedNewsList>
+            </div>
+          </div>
+        </div>
+        <div class="col-start-lg-8 col-end-lg-12 col-12">
+          <aside class="position-sticky top-0">
+            <h1 class="section-title h4">Ommabop</h1>
+            <PopCardList />
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

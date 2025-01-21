@@ -1,0 +1,9 @@
+---
+const { active } = Astro.props;
+---
+
+<li class="pagination__item" class:list={active && "active"}>
+  <a href="#!" class="btn btn--icon">
+    <slot />
+  </a>
+</li>

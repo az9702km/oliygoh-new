@@ -1,0 +1,128 @@
+---
+import Card from "../components/Card.astro";
+import CardTest from "../components/CardTest.astro";
+import ExamMeta from "../components/ExamMeta.astro";
+import Filter from "../components/Filter.astro";
+import FilterItem from "../components/FilterItem.astro";
+import FormGroup from "../components/FormGroup.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="bg-surface-low py-2xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="section">
+            <h1 class="h2 mb-lg">DTM online test topshirish 2025</h1>
+            <p class="mb-lg">
+              DTM tomonidan o'tkaziladigan test imtihonlari abituriyentlar uchun
+              eng muhim imtihonlardan biridir. DTM standartida onlayn test
+              topshrish orqali abituriyentlarning bilim darajasini aniqlash va
+              diagnostika qilish imkoniyati mavjud. DTM hozirda Bilim va
+              malalakalarni baholash agentligi sifatida qayta tashkil etilgan.
+            </p>
+            <h1 class="h3 mb-lg">Online testlar</h1>
+            <p class="mb-lg">
+              Oliygoh.uz tomonidan tashkil etilgan online test tizimi,
+              abituriyentlarga qulaylik yaratib, ularning bilimlarini sinovdan
+              o'tkazishga imkon beradi. Ushbu testlar orqali talabalar o'z
+              bilimlarini real vaqtda baholay oladilar. Test yakunida to'plangan
+              ballarga mos qaysi yo'nalishlarga kirish imkoniyati mavjudligini
+              bilib olishingiz mumkin.
+            </p>
+            <h1 class="h3 mb-lg">Namunaviy blok testlar</h1>
+            <p class="mb-lg">
+              Abituriyentlar uchun blok testlar va dtm namunaviy testlar 2 ta
+              mutaxassislik fani va 3 ta majburiy fan blokidan iborat, har bir
+              blok 30 ta test savoli va imtihon umumiy 90 ta test savolidan
+              iborat. Majburiy fanlar blokiga O'zbekiston tarixi, O'zbek tili
+              hamda Matematika fanlaridan teng miqdorda test savollari
+              kiritilgan. Bu toifa test abituriyentlarning kompleks bilimlarini
+              baholashda muhim ahamiyatga ega.
+            </p>
+            <h1 class="h3 mb-lg">DTM test variantlari</h1>
+            <p class="mb-lg">
+              Ushbu sahifada siz quyidagi fanlardan test variantlarini ishlash
+              orqali o'z bilmingizni sinovdan o'tkizishingiz mumkin:
+            </p>
+            <ul class="mb-lg">
+              <li>Matematika + Fizika</li>
+              <li>Ingliz tili + Matematika</li>
+              <li>Kimyo + biologiya</li>
+              <li>Tarix + huquq</li>
+              <li>Chet tili + ona tili va adabiyoti</li>
+              <li>Tarix + geografiya</li>
+              <li>Geografiya + matematika</li>
+              <li>Ingliz tili + ona tili va adabiyoti</li>
+              <li>Majburiy fanlar</li>
+            </ul>
+            <p>
+              Barcha dtm test variantlari 30 ta savoldan iborat. Imtihon
+              yakunida to'plagan balingiz va 2023-yil kirish ballari
+              statistikasi asosida qaysi mutaxassisliklarga tahminan kira
+              olishingizni bilib olasiz.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="position-sticky top-0">
+            <ExamMeta />
+            <section class="mt-xl section">
+              <div class="row gap-y-xl gap-y-md-lg">
+                <div class="col-md-6">
+                  <FormGroup>
+                    <Fragment slot="label">1-Fan (mutaxassislik)</Fragment>
+                    <select name="" id="">
+                      <option value="">Fizika</option>
+                      <option value="">Matematika</option>
+                      <option value="">Ingliz tili</option>
+                      <option value="">Ona tili</option>
+                      <option value="">Tarix</option>
+                      <option value="">Biologiya</option>
+                      <option value="">Kimyo</option>
+                    </select>
+                  </FormGroup>
+                </div>
+                <div class="col-md-6">
+                  <FormGroup>
+                    <Fragment slot="label">2-Fan (mutaxassislik)</Fragment>
+                    <select name="" id="">
+                      <option value="">Fizika</option>
+                      <option value="">Matematika</option>
+                      <option value="">Ingliz tili</option>
+                      <option value="">Ona tili</option>
+                      <option value="">Tarix</option>
+                      <option value="">Biologiya</option>
+                      <option value="">Kimyo</option>
+                    </select>
+                  </FormGroup>
+                </div>
+                <div class="col-md-12">
+                  <FormGroup>
+                    <Fragment slot="label">Majburiy fanlar</Fragment>
+                    <select name="" id="">
+                      <option value="">Ona tili, Tarix, Matematika</option>
+                      <option value="">Ona tili, Tarix, Matematika</option>
+                    </select>
+                  </FormGroup>
+                </div>
+                <div class="col-md-12">
+                  <div class="d-flex flex-column gap-lg">
+                    <a href="#!" class="btn btn--primary">Imtihonni boshlash</a>
+                    <a href="#!" class="btn btn--secondary align-self-center"
+                      >Natijalar jadvali <i class="ti ti-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

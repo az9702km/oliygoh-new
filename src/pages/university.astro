@@ -1,0 +1,420 @@
+---
+import Card from "../components/Card.astro";
+import DescBlock from "../components/DescBlock.astro";
+import DetailBullet from "../components/DetailBullet.astro";
+import Filter from "../components/Filter.astro";
+import FilterItem from "../components/FilterItem.astro";
+import HeiCard from "../components/HeiCard.astro";
+import IconText from "../components/IconText.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import Button from "../components/shared/button.astro";
+import Table from "../components/Table.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="bg-surface-low py-2xl">
+    <div class="container mb-2xl">
+      <div class="row">
+        <div class="col-md-5">
+          <aside class="position-sticky top-0">
+            <HeiCard />
+          </aside>
+        </div>
+        <div class="col-md-7">
+          <div class="section">
+            <div class="d-flex flex-column gap-xl">
+              <h1 class="h4">
+                Toshkent axborot texnologiyalari universiteti kirish ballari
+                2024
+              </h1>
+              <p>
+                Muhammad al-Xorazmiy nomidagi Toshkent axborot texnologiyalari
+                universiteti (sobiq Toshkent elektrotexnika aloqa instituti)
+                1955 yilda tashkil topgan. 2002 yil 30 may kuni O‘zbekiston
+                Respublikasi Prezidenti PF-3080 Farmoniga binoan Toshkent
+                axborot texnologiyalari universitetiga aylantirildi. 2005-yil
+                2-iyun kuni O‘zbekiston Respublikasi Prezidenti PQ-91 sonli
+                Qaroriga TATUning Qarshi, Samarqand, Urganch va Farg‘ona
+                shaharlarida mintaqaviy filiallar tashkil etilgan.
+              </p>
+              <p>
+                Universitet va uning mintaqaviy filiallari tarkibida 13ta
+                fakultet, 62 ta kafedra mavjud bo‘lib, ta’limning 23 yo‘nalishi
+                bo‘yicha, jumladan bakalavriatning 8 yangi yo‘nalishi va
+                magistraturaning 9 yangi mutaxassisligi bo‘yicha kadrlarni
+                tayyorlanadi.
+              </p>
+              <p>
+                Universitet va uning mintaqaviy filiallari tarkibida 13ta
+                fakultet, 62 ta kafedra mavjud bo‘lib, ta’limning 23 yo‘nalishi
+                bo‘yicha, jumladan bakalavriatning 8 yangi yo‘nalishi va
+                magistraturaning 9 yangi mutaxassisligi bo‘yicha kadrlarni
+                tayyorlanadi.
+              </p>
+              <h2 class="h5">TATU - BUGUN</h2>
+              <ul>
+                <li>
+                  1955 yil - Toshkent elektrotexnika aloqa instituti (TEAI)
+                </li>
+                <li>
+                  1960 yil - elektroaloqa muhandislari birinchi avlodi
+                  tayyorlandi
+                </li>
+                <li>
+                  1978 yil - Frunze (hozirda Bishkek), Dushanbe, Olma-Ota va
+                  Farg`ona shaharlarida TEAI sirtqi fakultetining tayanch
+                  punktlari tashkil etildi.
+                </li>
+                <li>
+                  1993 yil - TEAI instituti qoshida aloqa zobitlarini tayyorlash
+                  uchun maxsus fakultet tashkil etildi
+                </li>
+                <li>
+                  1994 yil - Markaziy Osiyo respublikalari hamda Mo`g`iliston,
+                  Pokiston va Hindiston aloqa tarmoqlari injener-texnik
+                  xodimlari malakasini oshirish uchun institut qoshida Markaziy
+                  Osiyo telekommunikatsiya o`quv markazi (SAUTST) tashkil etildi
+                </li>
+                <li>
+                  1997 yil - institut qoshida litsey-internat faoliyat yurita
+                  boshladi
+                </li>
+                <li>
+                  1999 yil - institut qoshida akademik litsey faoliyat yurita
+                  boshladi
+                </li>
+                <li>
+                  2002 yil - O`zbekiston Respublikasi Prezidenti Farmoniga
+                  asosan TEAI Toshkent axborot texnologiyalari universiteti
+                  (TATU) deb atala boshlandi
+                </li>
+                <li>
+                  2005 yil - Qarshi, Nukus, Samarqand, Urganch va Farg`ona
+                  shaharlarida TATU mintaqaviy filiallari tashkil etildi
+                </li>
+              </ul>
+              <p>
+                TATU - bu zamonaviy tipdagi, yuqori ilmiy-pedagogik salohiyat,
+                ta'lim kommunikatsiyalarining keng turlari, xalqaro aloqalarning
+                rivojlangan tarmog`i, jamiyatda mutaxassislar tayyorlash
+                darajasi bo`yicha yuqori mavqega ega bo`lgan universitetdir.
+                Keyingi yillarda universitetda yaxshi an'analar soni ko`payib
+                bormoqda, bakalavriatura ta'limining yangi yo`nalishlari va
+                magistratura mutaxassisliklari ochilmoqda, dissertatsiyalar
+                himoya qilinmoqda, moddiy-texnik baza yaxshilanmoqda, yangi
+                korpuslar qurilmoqda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bg-surface py-2xl">
+      <div class="container">
+        <div class="d-flex flex-column position-relative">
+          <div
+            class="d-flex py-lg justify-content-between position-sticky top-0 bg-surface">
+            <div class="d-flex gap-lg">
+              <Button style="secondary"
+                >2024-2025 <i class="ti ti-chevron-down"></i></Button
+              >
+              <Button style="secondary"
+                >Kunduzgi <i class="ti ti-chevron-down"></i></Button
+              >
+              <Button style="secondary"
+                >O’zbek <i class="ti ti-chevron-down"></i></Button
+              >
+            </div>
+            <div class="d-flex gap-2xl gap-y-sm flex-wrap">
+              <IconText>
+                <DetailBullet slot="icon" type="success" /> Grant</IconText
+              >
+              <IconText> <DetailBullet slot="icon" /> Shartnoma</IconText>
+              <IconText>
+                <DetailBullet slot="icon" type="info" /> Tanlov</IconText
+              >
+            </div>
+          </div>
+          <Table>
+            <thead>
+              <tr>
+                <th scope="col">Mutaxassislik</th>
+                <th colspan="3" scope="col">Qabul kvotalari</th>
+                <th colspan="2" scope="col">Kirish ballari</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <div>Axborot xavfsizligi (sohalar bo‘yicha)</div>
+                  <div class="text-on-surface-variant">
+                    60610300 / Matematika / Fizika
+                  </div>
+                </td>
+                <td class="border-l">
+                  <IconText> 123.8 </IconText>
+                </td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    123.8
+                  </IconText></td
+                >
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    84
+                  </IconText></td
+                >
+                <td class="border-l">
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    90.4
+                  </IconText></td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    71.8
+                  </IconText></td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <div>Axborot xavfsizligi (sohalar bo‘yicha)</div>
+                  <div class="text-on-surface-variant">
+                    60610300 / Matematika / Fizika
+                  </div>
+                </td>
+                <td class="border-l">
+                  <IconText> 123.8 </IconText>
+                </td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    123.8
+                  </IconText></td
+                >
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    84
+                  </IconText></td
+                >
+                <td class="border-l">
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    90.4
+                  </IconText></td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    71.8
+                  </IconText></td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <div>Axborot xavfsizligi (sohalar bo‘yicha)</div>
+                  <div class="text-on-surface-variant">
+                    60610300 / Matematika / Fizika
+                  </div>
+                </td>
+                <td class="border-l">
+                  <IconText> 123.8 </IconText>
+                </td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    123.8
+                  </IconText></td
+                >
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    84
+                  </IconText></td
+                >
+                <td class="border-l">
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    90.4
+                  </IconText></td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    71.8
+                  </IconText></td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <div>Axborot xavfsizligi (sohalar bo‘yicha)</div>
+                  <div class="text-on-surface-variant">
+                    60610300 / Matematika / Fizika
+                  </div>
+                </td>
+                <td class="border-l">
+                  <IconText> 123.8 </IconText>
+                </td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    123.8
+                  </IconText></td
+                >
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    84
+                  </IconText></td
+                >
+                <td class="border-l">
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    90.4
+                  </IconText></td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    71.8
+                  </IconText></td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <div>Axborot xavfsizligi (sohalar bo‘yicha)</div>
+                  <div class="text-on-surface-variant">
+                    60610300 / Matematika / Fizika
+                  </div>
+                </td>
+                <td class="border-l">
+                  <IconText> 123.8 </IconText>
+                </td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    123.8
+                  </IconText></td
+                >
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    84
+                  </IconText></td
+                >
+                <td class="border-l">
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    90.4
+                  </IconText></td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    71.8
+                  </IconText></td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <div>Axborot xavfsizligi (sohalar bo‘yicha)</div>
+                  <div class="text-on-surface-variant">
+                    60610300 / Matematika / Fizika
+                  </div>
+                </td>
+                <td class="border-l">
+                  <IconText> 123.8 </IconText>
+                </td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    123.8
+                  </IconText></td
+                >
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    84
+                  </IconText></td
+                >
+                <td class="border-l">
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    90.4
+                  </IconText></td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    71.8
+                  </IconText></td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <div>Axborot xavfsizligi (sohalar bo‘yicha)</div>
+                  <div class="text-on-surface-variant">
+                    60610300 / Matematika / Fizika
+                  </div>
+                </td>
+                <td class="border-l">
+                  <IconText> 123.8 </IconText>
+                </td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    123.8
+                  </IconText></td
+                >
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    84
+                  </IconText></td
+                >
+                <td class="border-l">
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    90.4
+                  </IconText></td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    71.8
+                  </IconText></td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <div>Axborot xavfsizligi (sohalar bo‘yicha)</div>
+                  <div class="text-on-surface-variant">
+                    60610300 / Matematika / Fizika
+                  </div>
+                </td>
+                <td class="border-l">
+                  <IconText> 123.8 </IconText>
+                </td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    123.8
+                  </IconText></td
+                >
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    84
+                  </IconText></td
+                >
+                <td class="border-l">
+                  <IconText>
+                    <DetailBullet slot="icon" type="success" />
+                    90.4
+                  </IconText></td>
+                <td>
+                  <IconText>
+                    <DetailBullet slot="icon" />
+                    71.8
+                  </IconText></td>
+              </tr>
+            </tbody>
+          </Table>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

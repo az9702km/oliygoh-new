@@ -1,0 +1,124 @@
+.btn {
+  --padding-top: var(--button-padding-top);
+  --padding-right: var(--button-padding-right);
+  --padding-bottom: var(--button-padding-bottom);
+  --padding-left: var(--button-padding-left);
+  --gap: var(--button-gap);
+  --bg-color: var(--button-bg-color);
+  --border-color: var(--button-border-color);
+  --border-style: solid;
+  --text-color: var(--button-text-color);
+  --text-size: var(--button-text-size);
+  --text-line-height: var(--button-text-line-height);
+  --border-radius-top-left: var(--button-border-radius-top-left);
+  --border-radius-top-right: var(--button-border-radius-top-right);
+  --border-radius-bottom-right: var(--button-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--button-border-radius-bottom-left);
+  --opacity: var(--button-opacity);
+  --border-width-top: var(--button-border-width-top);
+  --border-width-right: var(--button-border-width-right);
+  --border-width-bottom: var(--button-border-width-bottom);
+  --border-width-left: var(--button-border-width-left);
+  display: inline-flex;
+  cursor: pointer;
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  gap: var(--gap);
+  white-space: nowrap;
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--body-opacity-full, 1);
+  background: var(--bg-color);
+  user-select: none;
+  text-decoration: none;
+  vertical-align: middle;
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--body-font-family-primary);
+  font-size: var(--text-size);
+  font-style: normal;
+  font-weight: var(--text-weight);
+  line-height: var(--text-line-height);
+  transition: 0.15s transform ease-in-out;
+  /* 150% */
+
+  &--primary {
+    --bg-color: var(--button--style-primary-bg-color);
+    --border-color: var(--button--style-primary-border-color);
+    --text-color: var(--button--style-primary-text-color);
+  }
+
+  &--secondary {
+    --bg-color: var(--button--style-secondary-bg-color);
+    --border-color: var(--button--style-secondary-border-color);
+    --text-color: var(--button--style-secondary-text-color);
+  }
+
+  &--tertiary {
+    --bg-color: var(--button--style-tertiary-bg-color);
+    --border-color: var(--button--style-tertiary-border-color);
+    --text-color: var(--button--style-tertiary-text-color);
+  }
+
+  &--sm {
+    --padding-top: var(--button--size-sm-padding-top);
+    --padding-right: var(--button--size-sm-padding-right);
+    --padding-bottom: var(--button--size-sm-padding-bottom);
+    --padding-left: var(--button--size-sm-padding-left);
+    --gap: var(--button--size-sm-gap);
+    --text-size: var(--button--size-sm-text-size);
+    --text-line-height: var(--button--size-sm-text-line-height);
+  }
+
+  &--lg {
+    --padding-top: var(--button--size-lg-padding-top);
+    --padding-right: var(--button--size-lg-padding-right);
+    --padding-bottom: var(--button--size-lg-padding-bottom);
+    --padding-left: var(--button--size-lg-padding-left);
+    --gap: var(--button--size-lg-gap);
+    --text-size: var(--button--size-lg-text-size);
+    --text-line-height: var(--button--size-lg-text-line-height);
+  }
+
+  &--icon {
+    --padding-right: var(--padding-top);
+    --padding-left: var(--padding-top);
+    width: calc(
+      var(--text-line-height) + var(--padding-right) + var(--padding-left) +
+        0.125rem
+    );
+  }
+
+  &:hover {
+    transform: translateY(-0.125rem);
+    transition: 0.15s transform ease-in-out;
+  }
+}
+
+.btn--icon.btn--sm {
+  i {
+    font-size: var(--text-line-height);
+  }
+}
+
+.btn--icon,
+.btn--icon.btn--md {
+  i {
+    font-size: var(--text-line-height);
+  }
+}
+
+.btn--icon.btn--lg {
+  i {
+    font-size: var(--text-line-height);
+  }
+}

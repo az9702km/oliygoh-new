@@ -1,0 +1,55 @@
+.pagination {
+  --padding-top: var(--pagination-padding-top);
+  --padding-right: var(--pagination-padding-right);
+  --padding-bottom: var(--pagination-padding-bottom);
+  --padding-left: var(--pagination-padding-left);
+  --gap: var(--pagination-gap);
+  --border-radius-top-left: var(--pagination-border-radius-top-left);
+  --border-radius-top-right: var(--pagination-border-radius-top-right);
+  --border-radius-bottom-right: var(--pagination-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--pagination-border-radius-bottom-left);
+  --border-color: var(--pagination-border-color);
+  --border-style: solid;
+  --border-width-top: var(--pagination-border-width-top);
+  --border-width-right: var(--pagination-border-width-right);
+  --border-width-bottom: var(--pagination-border-width-bottom);
+  --border-width-left: var(--pagination-border-width-left);
+  --opacity: var(--pagination-opacity);
+  --bg-color: var(--pagination-bg-color);
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+
+  &__item {
+    &.active {
+      .btn {
+        --border-color: var(--pagination-_btn--active-border-color);
+        --opacity: var(--pagination-_btn--active-opacity);
+        --bg-color: var(--pagination-_btn--active-bg-color);
+        --text-color: var(--pagination-_btn--active-text-color);
+      }
+    }
+    .btn {
+      --border-color: var(--pagination-_btn-border-color);
+      --opacity: var(--pagination-_btn-opacity);
+      --bg-color: var(--pagination-_btn-bg-color);
+      --text-weight: var(--body-font-weight-medium);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.chip {
+  --padding-top: var(--chip-padding-top);
+  --padding-right: var(--chip-padding-right);
+  --padding-bottom: var(--chip-padding-bottom);
+  --padding-left: var(--chip-padding-left);
+  --gap: var(--chip-gap);
+  --bg-color: var(--chip-bg-color);
+  --border-color: var(--chip-border-color);
+  --border-style: solid;
+  --border-width-top: var(--chip-border-width-top);
+  --border-width-right: var(--chip-border-width-top);
+  --border-width-bottom: var(--chip-border-width-top);
+  --border-width-left: var(--chip-border-width-top);
+  --text-color: var(--chip-text-color);
+  --text-size: var(--chip-text-size);
+  --text-line-height: var(--chip-text-line-height);
+  --border-radius-top-left: var(--chip-border-radius-top-left);
+  --border-radius-top-right: var(--chip-border-radius-top-right);
+  --border-radius-bottom-right: var(--chip-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--chip-border-radius-bottom-left);
+  --opacity: var(--chip-opacity);
+  display: inline-flex;
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  align-items: center;
+  vertical-align: middle;
+  user-select: none;
+  gap: var(--gap);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+  cursor: pointer;
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--body-font-family-primary);
+  font-size: var(--text-size);
+  font-style: normal;
+  font-weight: var(--text-weight);
+  line-height: var(--text-line-height);
+  text-decoration: none;
+  white-space: nowrap;
+}

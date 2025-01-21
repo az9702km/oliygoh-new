@@ -1,0 +1,28 @@
+---
+import Button from "./shared/button.astro";
+
+import illustration from "../assets/img/exam-illustration.svg";
+---
+
+<section class="test-day">
+  <div class="container">
+    <div class="test-day__block">
+      <div class="row align-items-center">
+        <div class="col-md-5">
+          <div class="test-day__content">
+            <div class="test-day__text">
+              <h1 class="text-uppercase text-center text-md-start">
+                <div>DTM online test topshirish</div>
+                <div class="text-tertiary">2025</div>
+              </h1>
+            </div>
+            <Button style="secondary" size="lg">Imtihonda qatnashish</Button>
+          </div>
+        </div>
+        <div class="col-md-7 d-none d-md-block">
+          <img class="w-full" src={illustration.src} alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

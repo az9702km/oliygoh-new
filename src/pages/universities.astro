@@ -1,0 +1,111 @@
+---
+import Card from "../components/Card.astro";
+import DetailBullet from "../components/DetailBullet.astro";
+import Filter from "../components/Filter.astro";
+import FilterItem from "../components/FilterItem.astro";
+import FormGroup from "../components/FormGroup.astro";
+import HeiList from "../components/HeiList.astro";
+import IconText from "../components/IconText.astro";
+import UniversityCard from "../components/UniversityCard.astro";
+import Input from "../components/Input.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="bg-surface-low py-2xl">
+    <div class="container">
+      <h1 class="section-title h4">
+        Qabul 2024 - oliygohlar, kirish ballari 2024 va qabul kvotalari 2024
+      </h1>
+      <div class="row">
+        <div class="col-md-5">
+          <aside class="position-sticky top-0 pt-2xl">
+            <div class="section">
+              <div class="d-flex flex-column gap-lg">
+                <FormGroup id="qidiruv">
+                  <Fragment slot="label">Qidiruv</Fragment>
+                  <input type="text" id="qidiruv" />
+                </FormGroup>
+                <FormGroup id="qidiruv1">
+                  <Fragment slot="label">Joylashgan hudud</Fragment>
+                  <select name="select" id="qidiruv1">
+                    <option value="">Some option</option>
+                    <option value="">Some option</option>
+                    <option value="">Some option</option>
+                    <option value="">Some option</option>
+                  </select>
+                </FormGroup>
+                <FormGroup id="lang">
+                  <Fragment slot="label">Joylashgan hudud</Fragment>
+                  <select name="select" id="lang">
+                    <option value="">O'zbek</option>
+                    <option value="">Rus</option>
+                  </select>
+                </FormGroup>
+                <FormGroup id="direct">
+                  <Fragment slot="label">Yo’nalishlar</Fragment>
+                  <select name="select" id="direct">
+                    <option value="">Mutaxassassislik</option>
+                    <option value="">Mutaxassassislik</option>
+                    <option value="">Mutaxassassislik</option>
+                    <option value="">Mutaxassassislik</option>
+                    <option value="">Mutaxassassislik</option>
+                    <option value="">Mutaxassassislik</option>
+                  </select>
+                </FormGroup>
+                <FormGroup id="qidiruv">
+                  <Fragment slot="label">Qidiruv</Fragment>
+                  <input type="range" id="qidiruv" />
+                </FormGroup>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-7">
+          <div class="d-flex gap-2xl gap-y-sm px-sm mb-sm justify-content-md-end flex-wrap">
+            <IconText> <DetailBullet slot="icon" /> Mutaxassisliklar</IconText>
+            <IconText>
+              <DetailBullet slot="icon" type="success" /> O'rtacha ball</IconText
+            >
+            <IconText>
+              <DetailBullet slot="icon" type="info" /> Qabul kvotasi</IconText
+            >
+          </div>
+          <div class="section py-sm">
+            <HeiList>
+              <UniversityCard
+                >Andijon davlat chet tillari instituti</UniversityCard
+              >
+              <UniversityCard>Andijon davlat tibbiyot instituti</UniversityCard>
+              <UniversityCard>Andijon davlat universiteti</UniversityCard>
+              <UniversityCard
+                >Andijon davlat universitetining Pedagogika instituti</UniversityCard
+              >
+              <UniversityCard
+                >Andijon iqtisodiyot va qurilish instituti</UniversityCard
+              >
+              <UniversityCard>Andijon mashinasozlik instituti</UniversityCard>
+            </HeiList>
+          </div>
+          <div class="d-flex justify-content-end pt-xl mt-sm">
+            <Pagination>
+              <PaginationItem>
+                <i class="ti ti-chevron-left"></i>
+              </PaginationItem>
+              <PaginationItem>1 </PaginationItem>
+              <PaginationItem active>2 </PaginationItem>
+              <PaginationItem>.. </PaginationItem>
+              <PaginationItem>4 </PaginationItem>
+              <PaginationItem>
+                <i class="ti ti-chevron-right"></i>
+              </PaginationItem>
+            </Pagination>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

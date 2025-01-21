@@ -1,0 +1,179 @@
+.study-card {
+  --padding-top: calc(var(--study-card-padding-top) / 2);
+  --padding-right: calc(var(--study-card-padding-right) / 2);
+  --padding-bottom: calc(var(--study-card-padding-bottom) / 2);
+  --padding-left: calc(var(--study-card-padding-left) / 2);
+  --gap: calc(var(--study-card-gap) / 2);
+  --border-radius-top-left: var(--study-card-border-radius-top-left);
+  --border-radius-top-right: var(--study-card-border-radius-top-right);
+  --border-radius-bottom-right: var(--study-card-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--study-card-border-radius-bottom-left);
+  --border-color: var(--study-card-border-color);
+  --border-style: solid;
+  --border-width-top: var(--study-card-border-width-top);
+  --border-width-right: var(--study-card-border-width-right);
+  --border-width-bottom: var(--study-card-border-width-bottom);
+  --border-width-left: var(--study-card-border-width-left);
+  --opacity: var(--study-card-opacity);
+  --bg-color: var(--study-card-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+
+  @include media(md) {
+    flex-direction: row;
+    align-items: center;
+    --padding-top: var(--study-card-padding-top);
+    --padding-right: var(--study-card-padding-right);
+    --padding-bottom: var(--study-card-padding-bottom);
+    --padding-left: var(--study-card-padding-left);
+    --gap: var(--study-card-gap);
+  }
+
+  &__title {
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__body {
+    --padding-top: var(--study-card-_body-padding-top);
+    --padding-right: var(--study-card-_body-padding-right);
+    --padding-bottom: var(--study-card-_body-padding-bottom);
+    --padding-left: var(--study-card-_body-padding-left);
+    --gap: calc(var(--study-card-_body-gap) / 2);
+    --border-radius-top-left: var(--study-card-_body-border-radius-top-left);
+    --border-radius-top-right: var(--study-card-_body-border-radius-top-right);
+    --border-radius-bottom-right: var(
+      --study-card-_body-border-radius-bottom-right
+    );
+    --border-radius-bottom-left: var(
+      --study-card-_body-border-radius-bottom-left
+    );
+    --border-color: var(--study-card-_body-border-color);
+    --border-style: solid;
+    --border-width-top: var(--study-card-_body-border-width-top);
+    --border-width-right: var(--study-card-_body-border-width-right);
+    --border-width-bottom: var(--study-card-_body-border-width-bottom);
+    --border-width-left: var(--study-card-_body-border-width-left);
+    --opacity: var(--study-card-_body-opacity);
+    --bg-color: var(--study-card-_body-bg-color);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: var(--gap);
+    padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+      var(--padding-left);
+    border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+      var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+    border-top-width: var(--border-width-top);
+    border-right-width: var(--border-width-right);
+    border-bottom-width: var(--border-width-bottom);
+    border-left-width: var(--border-width-left);
+    border-color: var(--border-color);
+    border-style: var(--border-style);
+    opacity: var(--opacity);
+    background: var(--bg-color);
+
+    @include media(md) {
+      --gap: var(--study-card-_body-gap);
+    }
+  }
+
+  &__meta {
+    --padding-top: var(--study-card-_meta-padding-top);
+    --padding-right: var(--study-card-_meta-padding-right);
+    --padding-bottom: var(--study-card-_meta-padding-bottom);
+    --padding-left: var(--study-card-_meta-padding-left);
+    --gap: var(--study-card-_meta-gap);
+    --border-radius-top-left: var(--study-card-_meta-border-radius-top-left);
+    --border-radius-top-right: var(--study-card-_meta-border-radius-top-right);
+    --border-radius-bottom-right: var(
+      --study-card-_meta-border-radius-bottom-right
+    );
+    --border-radius-bottom-left: var(
+      --study-card-_meta-border-radius-bottom-left
+    );
+    --border-color: var(--study-card-_meta-border-color);
+    --border-style: solid;
+    --border-width-top: var(--study-card-_meta-border-width-top);
+    --border-width-right: var(--study-card-_meta-border-width-right);
+    --border-width-bottom: var(--study-card-_meta-border-width-bottom);
+    --border-width-left: var(--study-card-_meta-border-width-left);
+    --opacity: var(--study-card-_meta-opacity);
+    --bg-color: var(--study-card-_meta-bg-color);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--gap);
+    padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+      var(--padding-left);
+    border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+      var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+    border-top-width: var(--border-width-top);
+    border-right-width: var(--border-width-right);
+    border-bottom-width: var(--border-width-bottom);
+    border-left-width: var(--border-width-left);
+    border-color: var(--border-color);
+    border-style: var(--border-style);
+    opacity: var(--opacity);
+    background: var(--bg-color);
+  }
+
+  &__meta-value {
+    --width: var(--study-card-_meta-width);
+    min-width: var(--width);
+  }
+}
+
+.hei-list {
+  --padding-top: var(--hei-list-padding-top);
+  --padding-right: var(--hei-list-padding-right);
+  --padding-bottom: var(--hei-list-padding-bottom);
+  --padding-left: var(--hei-list-padding-left);
+  --gap: var(--hei-list-gap);
+  --border-radius-top-left: var(--hei-list-border-radius-top-left);
+  --border-radius-top-right: var(--hei-list-border-radius-top-right);
+  --border-radius-bottom-right: var(--hei-list-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--hei-list-border-radius-bottom-left);
+  --border-color: var(--hei-list-border-color);
+  --border-style: solid;
+  --border-width-top: var(--hei-list-border-width-top);
+  --border-width-right: var(--hei-list-border-width-right);
+  --border-width-bottom: var(--hei-list-border-width-bottom);
+  --border-width-left: var(--hei-list-border-width-left);
+  --opacity: var(--hei-list-opacity);
+  --bg-color: var(--hei-list-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+
+  & > .study-card:last-child {
+    --border-width-bottom: 0;
+  }
+}

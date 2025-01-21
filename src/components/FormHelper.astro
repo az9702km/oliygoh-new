@@ -1,0 +1,7 @@
+---
+const { type } = Astro.props;
+---
+
+<div class="helper-feedback" class:list={type && `helper-feedback--${type}`}>
+  <slot />
+</div>

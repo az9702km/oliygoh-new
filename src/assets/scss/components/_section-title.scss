@@ -1,0 +1,37 @@
+.section-title {
+  --padding-top: var(--section-title-_inner-padding-top);
+  --padding-right: var(--section-title-_inner-padding-right);
+  --padding-bottom: var(--section-title-_inner-padding-bottom);
+  --padding-left: var(--section-title-_inner-padding-left);
+  --margin-top: var(--section-title-padding-top);
+  --margin-right: var(--section-title-padding-right);
+  --margin-bottom: var(--section-title-padding-bottom);
+  --margin-left: var(--section-title-padding-left);
+  --bg-color: var(--section-title-bg-color);
+  --border-color: var(--section-title-border-color);
+  --border-style: solid;
+  --border-width-top: var(--section-title-_inner-border-width-top);
+  --border-width-right: var(--section-title-_inner-border-width-right);
+  --border-width-bottom: var(--section-title-_inner-border-width-bottom);
+  --border-width-left: var(--section-title-_inner-border-width-left);
+  --border-radius-top-left: var(--section-title-border-radius-top-left);
+  --border-radius-top-right: var(--section-title-border-radius-top-right);
+  --border-radius-bottom-right: var(--section-title-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--section-title-border-radius-bottom-left);
+  --opacity: var(--section-title-opacity);
+
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+  margin: var(--margin-top) var(--margin-right) var(--margin-bottom)
+    var(--margin-left);
+}

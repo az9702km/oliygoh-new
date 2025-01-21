@@ -1,0 +1,39 @@
+.section {
+  --padding-top: calc(var(--section-padding-top) / 2);
+  --padding-right: calc(var(--section-padding-right) / 2);
+  --padding-bottom: calc(var(--section-padding-bottom) / 2);
+  --padding-left: calc(var(--section-padding-left) / 2);
+  --gap: var(--section-gap);
+  --border-radius-top-left: var(--section-border-radius-top-left);
+  --border-radius-top-right: var(--section-border-radius-top-right);
+  --border-radius-bottom-right: var(--section-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--section-border-radius-bottom-left);
+  --border-color: var(--section-border-color);
+  --border-style: solid;
+  --border-width-top: var(--section-border-width-top);
+  --border-width-right: var(--section-border-width-right);
+  --border-width-bottom: var(--section-border-width-bottom);
+  --border-width-left: var(--section-border-width-left);
+  --opacity: var(--section-opacity);
+  --bg-color: var(--section-bg-color);
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+
+  @include media(md) {
+    --padding-top: var(--section-padding-top);
+    --padding-right: var(--section-padding-right);
+    --padding-bottom: var(--section-padding-bottom);
+    --padding-left: var(--section-padding-left);
+  }
+}

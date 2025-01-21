@@ -1,0 +1,55 @@
+---
+import RelatedNews from "./RelatedNews.astro";
+import RelatedNewsList from "./RelatedNewsList.astro";
+---
+
+<section class="hero-one">
+  <div class="container">
+    <div class="hero-one__block py-xl">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card__image">
+                <img
+                  src="https://static.oliygoh.uz/crop/1/7/346_190_80_1769172061.jpeg?t=1730466479"
+                  alt=""
+                />
+              </div>
+              <div class="card__body">
+                <div class="card__meta">
+                  <a class="meta">Abiturient</a>
+                </div>
+                <div class="card__content">
+                  <h3 class="text-h5 text-md-h3">
+                    <a href="#!"
+                      >Talaba OTMdagi o‘qishini davom ettira olmasa, to‘lagan
+                      kontrakt puli qaytarib olinadimi?</a
+                    >
+                  </h3>
+                  <div>
+                    Agar talaba oliy ta’lim muassasasida (OTM) o‘qishini davom
+                    ettira olmasa, to‘langan kontrakt pulini qisman qaytarib
+                    olish imkoniyati mavjud. O‘zbekiston Respublikasi Fuqarolik
+                    kodeksining tegishli moddalari bu holatni quyidagicha
+                    tushuntiradi
+                  </div>
+                  <div>Kecha, 15:14</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <RelatedNewsList>
+              <RelatedNews vertical />
+              <RelatedNews vertical />
+              <RelatedNews vertical />
+              <RelatedNews vertical />
+              <RelatedNews vertical />
+            </RelatedNewsList>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

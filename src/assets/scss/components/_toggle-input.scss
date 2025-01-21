@@ -1,0 +1,255 @@
+.custom-checkbox {
+  --padding-top: var(--check-padding-top);
+  --padding-right: var(--check-padding-right);
+  --padding-bottom: var(--check-padding-bottom);
+  --padding-left: var(--check-padding-left);
+  --gap: var(--check-gap);
+  --border-radius-top-left: var(--check-border-radius-top-left);
+  --border-radius-top-right: var(--check-border-radius-top-right);
+  --border-radius-bottom-right: var(--check-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--check-border-radius-bottom-left);
+  --border-color: var(--check-border-color);
+  --border-style: solid;
+  --border-width-top: var(--check-border-width-top);
+  --border-width-right: var(--check-border-width-right);
+  --border-width-bottom: var(--check-border-width-bottom);
+  --border-width-left: var(--check-border-width-left);
+  --opacity: var(--check-opacity);
+  --bg-color: var(--check-bg-color);
+  --width: var(--check-width);
+  --height: var(--check-height);
+  --text-color: var(--check-text-color);
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 1;
+  font-size: var(--body-font-size-sub);
+  width: var(--width);
+  height: var(--height);
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.15s all ease-in-out;
+
+  &:checked,
+  &[checked] {
+    --padding-top: var(--check--active-padding-top);
+    --padding-right: var(--check--active-padding-right);
+    --padding-bottom: var(--check--active-padding-bottom);
+    --padding-left: var(--check--active-padding-left);
+    --border-radius-top-left: var(--check--active-border-radius-top-left);
+    --border-radius-top-right: var(--check--active-border-radius-top-right);
+    --border-radius-bottom-right: var(
+      --check--active-border-radius-bottom-right
+    );
+    --border-radius-bottom-left: var(--check--active-border-radius-bottom-left);
+    --border-color: var(--check--active-border-color);
+    --border-width-top: var(--check--active-border-width-top);
+    --border-width-right: var(--check--active-border-width-right);
+    --border-width-bottom: var(--check--active-border-width-bottom);
+    --border-width-left: var(--check--active-border-width-left);
+    --opacity: var(--check--active-opacity);
+    --bg-color: var(--check--active-bg-color);
+    transition: 0.15s all ease-in-out;
+
+    &::after {
+      font-family: "tabler-icons";
+      content: "\ea5e";
+      font-weight: var(--body-font-weight-bold);
+      transition: 0.15s all ease-in-out;
+    }
+  }
+}
+
+.custom-radio {
+  --padding-top: var(--radio-padding-top);
+  --padding-right: var(--radio-padding-right);
+  --padding-bottom: var(--radio-padding-bottom);
+  --padding-left: var(--radio-padding-left);
+  --gap: var(--radio-gap);
+  --border-radius-top-left: var(--radio-border-radius-top-left);
+  --border-radius-top-right: var(--radio-border-radius-top-right);
+  --border-radius-bottom-right: var(--radio-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--radio-border-radius-bottom-left);
+  --border-color: var(--radio-border-color);
+  --border-style: solid;
+  --border-width-top: var(--radio-border-width-top);
+  --border-width-right: var(--radio-border-width-right);
+  --border-width-bottom: var(--radio-border-width-bottom);
+  --border-width-left: var(--radio-border-width-left);
+  --opacity: var(--radio-opacity);
+  --bg-color: var(--radio-bg-color);
+  --width: var(--radio-width);
+  --height: var(--radio-height);
+  --text-color: var(--radio-text-color);
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 1;
+  font-size: var(--body-font-size-sub);
+  width: var(--width);
+  height: var(--height);
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.15s all ease-in-out;
+
+  &:checked,
+  &[checked] {
+    --padding-top: var(--radio--active-padding-top);
+    --padding-right: var(--radio--active-padding-right);
+    --padding-bottom: var(--radio--active-padding-bottom);
+    --padding-left: var(--radio--active-padding-left);
+    --border-color: var(--radio--active-border-color);
+    --border-style: solid;
+    --border-width-top: var(--radio--active-border-width-top);
+    --border-width-right: var(--radio--active-border-width-right);
+    --border-width-bottom: var(--radio--active-border-width-bottom);
+    --border-width-left: var(--radio--active-border-width-left);
+    --opacity: var(--radio--active-opacity);
+    --bg-color: var(--radio--active-bg-color);
+    transition: 0.15s all ease-in-out;
+  }
+}
+
+.custom-switch {
+  --padding-top: var(--switch-padding-top);
+  --padding-right: var(--switch-padding-right);
+  --padding-bottom: var(--switch-padding-bottom);
+  --padding-left: var(--switch-padding-left);
+  --gap: var(--switch-gap);
+  --border-radius-top-left: var(--switch-border-radius-top-left);
+  --border-radius-top-right: var(--switch-border-radius-top-right);
+  --border-radius-bottom-right: var(--switch-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--switch-border-radius-bottom-left);
+  --border-color: var(--switch-border-color);
+  --border-style: solid;
+  --border-width-top: var(--switch-border-width-top);
+  --border-width-right: var(--switch-border-width-right);
+  --border-width-bottom: var(--switch-border-width-bottom);
+  --border-width-left: var(--switch-border-width-left);
+  --opacity: var(--switch-opacity);
+  --bg-color: var(--switch-bg-color);
+  --width: 1rem;
+  --height: 1rem;
+  --text-color: var(--switch-text-color);
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: calc(var(--width) * 2 + var(--border-width-right) * 2);
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.15s all ease-in-out;
+
+  &::after {
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--text-color);
+    content: "";
+    border-radius: 50%;
+    transition: 0.15s all ease-in-out;
+  }
+
+  &:checked,
+  &[checked] {
+    --bg-color: var(--switch--active-bg-color);
+    transition: 0.15s all ease-in-out;
+
+    &::after {
+      transform: translateX(var(--width));
+      transition: 0.15s all ease-in-out;
+    }
+  }
+}
+
+.toggle-input {
+  --padding-top: var(--toggle-input-padding-top);
+  --padding-right: var(--toggle-input-padding-right);
+  --padding-bottom: var(--toggle-input-padding-bottom);
+  --padding-left: var(--toggle-input-padding-left);
+  --gap: var(--toggle-input-gap);
+  --border-radius-top-left: var(--toggle-input-border-radius-top-left);
+  --border-radius-top-right: var(--toggle-input-border-radius-top-right);
+  --border-radius-bottom-right: var(--toggle-input-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--toggle-input-border-radius-bottom-left);
+  --border-color: var(--toggle-input-border-color);
+  --border-style: solid;
+  --border-width-top: var(--toggle-input-border-width-top);
+  --border-width-right: var(--toggle-input-border-width-right);
+  --border-width-bottom: var(--toggle-input-border-width-bottom);
+  --border-width-left: var(--toggle-input-border-width-left);
+  --opacity: var(--toggle-input-opacity);
+  --bg-color: var(--toggle-input-bg-color);
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+
+  input,
+  label {
+    cursor: pointer;
+  }
+}

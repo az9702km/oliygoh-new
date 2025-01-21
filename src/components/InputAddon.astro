@@ -1,0 +1,7 @@
+---
+const { size } = Astro.props;
+---
+
+<div class="input-addon" class:list={size && `input-addon--${size}`}>
+  <slot />
+</div>

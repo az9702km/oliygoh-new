@@ -1,0 +1,1631 @@
+---
+import "../assets/scss/index.scss";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Basics</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top d-none d-md-block">
+        <div class="container">
+          <div class="header-top__inner">
+            <div class="row">
+              <div class="col-6">
+                <div class="header-top-brand">
+                  <div class="brand-logo">Logo</div>
+                  <div class="slogan text-on-surface-variant text-sub">
+                    Aniq maqsad - g’alabaga yetaklaydi
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 d-flex align-items-center justify-content-end">
+                <a href="#!" class="btn btn--primary btn--sm">Login</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="container">
+          <div class="navbar__inner">
+            <div class="row" style="grid-row-gap: 0;">
+              <div class="col-lg-8">
+                <nav class="nav">
+                  <a href="#!" class="nav__link">Oliygohlar</a>
+                  <a href="#!" class="nav__link">Yangiliklar</a>
+                  <a href="#!" class="nav__link">DTM Testlar</a>
+                  <a href="#!" class="nav__link">PM Testlar</a>
+                  <a href="#!" class="nav__link"
+                    >Ma’lumotlar <i class="ti ti-chevron-down"></i></a
+                  >
+                  <a href="#!" class="nav__link"
+                    >Imtihonlar <i class="ti ti-chevron-down"></i></a
+                  >
+                  <a href="#!" class="nav__link">Grantlar</a>
+                </nav>
+              </div>
+              <div class="col-lg-4 d-flex align-items-center justify-content-end">
+                <a href="#!" class="btn btn--primary btn--icon">
+                  <i class="ti ti-search"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row my-lg my-xl-2xl">
+        <div class="col-md-3">
+          <h1 class="h3">Buttons</h1>
+        </div>
+        <div class="col-md-9">
+          <div>
+            <button type="button" class="btn btn--primary btn--lg"
+              >Some btn primary</button
+            >
+            <button type="button" class="btn btn--secondary btn--lg"
+              >Some btn primary</button
+            >
+            <button type="button" class="btn btn--lg">Some btn primary</button>
+            <button type="button" class="btn btn--tertiary btn--lg"
+              >Some btn primary</button
+            >
+          </div>
+          <div>
+            <button type="button" class="btn btn--primary"
+              >Some btn primary</button
+            >
+            <button type="button" class="btn btn--secondary"
+              >Some btn primary</button
+            >
+            <button type="button" class="btn">Some btn primary</button>
+            <button type="button" class="btn btn--tertiary"
+              >Some btn primary</button
+            >
+          </div>
+          <div>
+            <button type="button" class="btn btn--primary btn--sm"
+              >Some btn primary</button
+            >
+            <button type="button" class="btn btn--secondary btn--sm"
+              >Some btn primary</button
+            >
+            <button type="button" class="btn btn--sm">Some btn primary</button>
+            <button type="button" class="btn btn--tertiary btn--sm"
+              >Some btn primary</button
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg my-xl-2xl">
+        <div class="col-md-3">
+          <h1 class="h3">Navbar</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="navbar d-none d-md-flex">
+            <div class="navbar__inner">
+              <nav class="nav">
+                <a href="#!" class="nav__link">Link</a>
+                <a href="#!" class="nav__link">Link</a>
+                <a href="#!" class="nav__link">Link</a>
+                <a href="#!" class="nav__link">Link</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Card</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="https://static.oliygoh.uz/crop/3/4/346_190_80_3451933706.jpg?t=1730454236"
+                    alt=""
+                  />
+                </div>
+                <div class="card__body">
+                  <div class="card__meta">
+                    <a href="#!" class="meta">Foydali</a>
+                  </div>
+                  <div class="card__content">
+                    <h6>
+                      <a href="#!"
+                        >2025-yilda ta’lim sohasiga qancha mablag‘ ajratiladi?</a
+                      >
+                    </h6>
+                    <span class="card__date">Kecha, 15:14</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div>
+                <button class="chip">Somethin</button>
+                <button class="chip">Somethin</button>
+                <button class="chip">Somethin</button>
+                <button class="chip">Somethin</button>
+                <button class="chip">Somethin</button>
+                <button class="chip">Somethin</button>
+              </div>
+              <div>
+                <div class="d-inline-block">Some</div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card card--land">
+                <div class="card__image">
+                  <img
+                    src="https://static.oliygoh.uz/crop/3/4/346_190_80_3451933706.jpg?t=1730454236"
+                    alt=""
+                  />
+                </div>
+                <div class="card__body">
+                  <div class="card__meta">
+                    <a href="#!" class="meta">Foydali</a>
+                  </div>
+                  <div class="card__content">
+                    <span class="card__date">Kecha, 15:14</span>
+                    <h6>
+                      <a href="#!"
+                        >2025-yilda ta’lim sohasiga qancha mablag‘ ajratiladi?</a
+                      >
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card card--article">
+                <div class="card__image">
+                  <img
+                    src="https://static.oliygoh.uz/crop/3/4/346_190_80_3451933706.jpg?t=1730454236"
+                    alt=""
+                  />
+                </div>
+                <div class="card__body">
+                  <div class="card__content">
+                    <span class="card__date">Kecha, 15:14</span>
+                    <h6>
+                      <a href="#!"
+                        >2025-yilda ta’lim sohasiga qancha mablag‘ ajratiladi?</a
+                      >
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Section title</h1>
+        </div>
+        <div class="col-md-9">
+          <h1 class="section-title h2">Dolzarb</h1>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Related news</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="related-news mb-lg">
+                <a
+                  href="#!"
+                  class="text-sm flex-grow-1 text-on-surface text-decoration-none"
+                  >Endi kvota OTMga taqsimlanmaydi. bu nima degani?</a
+                >
+                <span class="text-sm text-on-surface-variant"
+                  >10-noyabr, 08:03</span
+                >
+              </div>
+              <div class="related-news related-news--vertical mb-lg">
+                <a
+                  href="#!"
+                  class="text-sm flex-grow-1 text-on-surface text-decoration-none"
+                  >Endi kvota OTMga taqsimlanmaydi. bu nima degani?</a
+                >
+                <span class="text-sm text-on-surface-variant"
+                  >10-noyabr, 08:03</span
+                >
+              </div>
+              <div class="related-news-list">
+                <div class="related-news">
+                  <a
+                    href="#!"
+                    class="text-sm flex-grow-1 text-on-surface text-decoration-none"
+                    >Endi kvota OTMga taqsimlanmaydi. bu nima degani?</a
+                  >
+                  <span class="text-sm text-on-surface-variant"
+                    >10-noyabr, 08:03</span
+                  >
+                </div>
+                <div class="related-news">
+                  <a
+                    href="#!"
+                    class="text-sm flex-grow-1 text-on-surface text-decoration-none"
+                    >Endi kvota OTMga taqsimlanmaydi. bu nima degani?</a
+                  >
+                  <span class="text-sm text-on-surface-variant"
+                    >10-noyabr, 08:03</span
+                  >
+                </div>
+                <div class="related-news">
+                  <a
+                    href="#!"
+                    class="text-sm flex-grow-1 text-on-surface text-decoration-none"
+                    >Endi kvota OTMga taqsimlanmaydi. bu nima degani?</a
+                  >
+                  <span class="text-sm text-on-surface-variant"
+                    >10-noyabr, 08:03</span
+                  >
+                </div>
+                <div class="related-news">
+                  <a
+                    href="#!"
+                    class="text-sm flex-grow-1 text-on-surface text-decoration-none"
+                    >Endi kvota OTMga taqsimlanmaydi. bu nima degani?</a
+                  >
+                  <span class="text-sm text-on-surface-variant"
+                    >10-noyabr, 08:03</span
+                  >
+                </div>
+                <div class="related-news">
+                  <a
+                    href="#!"
+                    class="text-sm flex-grow-1 text-on-surface text-decoration-none"
+                    >Endi kvota OTMga taqsimlanmaydi. bu nima degani?</a
+                  >
+                  <span class="text-sm text-on-surface-variant"
+                    >10-noyabr, 08:03</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Pop news card</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="pop-card mb-lg">
+                <div class="pop-card__body">
+                  <a href="#!" class="text-on-surface text-decoration-none"
+                    >Endi kvota OTMga taqsimlanmaydi. bu nima degani?</a
+                  >
+                  <div class="pop-card__meta text-sm text-on-surface-variant">
+                    <span>14-mart 01:07</span>
+                    <span> <i class="ti ti-eye"></i> 5031</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pop-list">
+                <div class="pop-card">
+                  <div class="pop-card__body">
+                    <a href="#!" class="text-on-surface text-decoration-none"
+                      >Endi kvota OTMga taqsimlanmaydi. bu nima degani?</a
+                    >
+                    <div class="pop-card__meta text-sm text-on-surface-variant">
+                      <span>14-mart 01:07</span>
+                      <span> <i class="ti ti-eye"></i> 5031</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pop-card">
+                  <div class="pop-card__body">
+                    <a href="#!" class="text-on-surface text-decoration-none"
+                      >Endi kvota OTMga taqsimlanmaydi. bu nima degani?</a
+                    >
+                    <div class="pop-card__meta text-sm text-on-surface-variant">
+                      <span>14-mart 01:07</span>
+                      <span> <i class="ti ti-eye"></i> 5031</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pop-card">
+                  <div class="pop-card__body">
+                    <a href="#!" class="text-on-surface text-decoration-none"
+                      >Endi kvota OTMga taqsimlanmaydi. bu nima degani?</a
+                    >
+                    <div class="pop-card__meta text-sm text-on-surface-variant">
+                      <span>14-mart 01:07</span>
+                      <span> <i class="ti ti-eye"></i> 5031</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pop-card">
+                  <div class="pop-card__body">
+                    <a href="#!" class="text-on-surface text-decoration-none"
+                      >Endi kvota OTMga taqsimlanmaydi. bu nima degani?</a
+                    >
+                    <div class="pop-card__meta text-sm text-on-surface-variant">
+                      <span>14-mart 01:07</span>
+                      <span> <i class="ti ti-eye"></i> 5031</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Test card</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="d-flex flex-column gap-lg mb-lg w-full">
+                <div class="d-flex gap-lg">
+                  <span class="detail-bullet"></span>
+                  <span class="detail-bullet detail-bullet--primary"></span>
+                  <span class="detail-bullet detail-bullet--success"></span>
+                  <span class="detail-bullet detail-bullet--info"></span>
+                  <span class="detail-bullet detail-bullet--warning"></span>
+                  <span class="detail-bullet detail-bullet--error"></span>
+                </div>
+                <div class="d-flex gap-xl">
+                  <div class="icon-text">
+                    <span class="detail-bullet detail-bullet--primary"></span>
+                    <span class="text-on-surface-variant">Mutaxassislik</span>
+                  </div>
+                  <div class="icon-text">
+                    <i class="ti ti-list-check text-primary icon-text__icon"
+                    ></i>
+                    <span class="text-on-surface-variant">Mutaxassislik</span>
+                  </div>
+                </div>
+                <div class="test-card">
+                  <div class="test-card__body">
+                    <div class="test-card__title">
+                      <div class="text-sm text-on-surface-variant">
+                        17-apr, 18:00
+                      </div>
+                      <a
+                        href="#!"
+                        class="text-lg text-on-surface text-decoration-none">
+                        Prezident va ixtisoslashtirilgan maktab imtihonlari
+                        uchun nazorat testi (3-6 sinf) #33
+                      </a>
+                    </div>
+                    <div class="d-flex gap-sm">
+                      <div class="icon-text test-card__meta">
+                        <i class="ti ti-notebook text-info icon-text__icon"></i>
+                        <span class="text-on-surface-variant">
+                          <b>20</b> ta savol</span
+                        >
+                      </div>
+                      <div class="icon-text test-card__meta">
+                        <i class="ti ti-user text-primary icon-text__icon"></i>
+                        <span class="text-on-surface-variant">
+                          <b>6 536</b> ishtirokchi</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#!" class="btn btn--secondary">Testni boshlash</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">HEI card</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="d-flex flex-column gap-lg mb-lg w-full">
+                <dl>
+                  <div class="desc-block">
+                    <dt class="text-on-surface-variant">Elektron pochta:</dt>
+                    <dt>
+                      <a href="#!" class="text-primary text-decoration-none"
+                        >Some link</a
+                      >
+                    </dt>
+                  </div>
+                </dl>
+              </div>
+              <div class="d-flex flex-column gap-lg mb-lg w-full">
+                <div class="annotations">
+                  <div class="icon-text">
+                    <span class="detail-bullet detail-bullet--success"></span>
+                    <span class="text-on-surface-variant">Grant</span>
+                  </div>
+                  <div class="icon-text">
+                    <span class="detail-bullet detail-bullet--primary"></span>
+                    <span class="text-on-surface-variant">Shartnoma</span>
+                  </div>
+                  <div class="icon-text">
+                    <span class="detail-bullet detail-bullet--info"></span>
+                    <span class="text-on-surface-variant">Tanlov</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="hei-card">
+                <div class="hei-card__image">
+                  <img
+                    src="https://static.oliygoh.uz/crop/3/0/400_210_85_3017761156.jpg?t=1592651088"
+                    alt=""
+                    class="w-full"
+                  />
+                </div>
+                <div class="hei-card__body">
+                  <dl class="row">
+                    <div class="col-md-6 desc-block">
+                      <dt class="text-on-surface-variant">Elektron pochta:</dt>
+                      <dt>
+                        <a href="#!" class="text-primary text-decoration-none"
+                          >+99871238-64-15</a
+                        >
+                      </dt>
+                    </div>
+                    <div class="col-md-6 desc-block">
+                      <dt class="text-on-surface-variant">Elektron pochta:</dt>
+                      <dt>
+                        <a href="#!" class="text-primary text-decoration-none"
+                          >tuit@tuit.uz</a
+                        >
+                      </dt>
+                    </div>
+                    <div class="col-md-6 desc-block">
+                      <dt class="text-on-surface-variant">Rasmiy sayt:</dt>
+                      <dt>
+                        <a href="#!" class="text-primary text-decoration-none"
+                          >tuit.uz</a
+                        >
+                      </dt>
+                    </div>
+                    <div class="col-md-6 desc-block">
+                      <dt class="text-on-surface-variant">Telegram:</dt>
+                      <dt>
+                        <a href="#!" class="text-primary text-decoration-none"
+                          >@tuituz_official</a
+                        >
+                      </dt>
+                    </div>
+                    <div class="col-md-12 desc-block">
+                      <dt class="text-on-surface-variant">Manzil:</dt>
+                      <dt>
+                        Toshkent shahri, Yunusobod tumani, Amir Temur shoh
+                        ko‘chasi, 108- uy, pochta indeksi: 100202
+                      </dt>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Study card</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="study-card mb-lg">
+                <div class="study-card__body">
+                  <div class="study-card__title">
+                    <a
+                      href="#!"
+                      class="text-lg text-bold text-on-surface text-decoration-none">
+                      Andijon davlat chet tillari instituti
+                    </a>
+                  </div>
+                  <div class="study-card__meta">
+                    <div class="icon-text study-card__meta-value">
+                      <span class="detail-bullet detail-bullet--primary"></span>
+                      <span class="text-on-surface-variant">16</span>
+                    </div>
+                    <div class="icon-text study-card__meta-value">
+                      <span class="detail-bullet detail-bullet--info"></span>
+                      <span class="text-on-surface-variant">480</span>
+                    </div>
+                    <div class="icon-text study-card__meta-value">
+                      <span class="detail-bullet detail-bullet--success"></span>
+                      <span class="text-on-surface-variant">333.9</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#!" class="btn btn--secondary">Batafsil</a>
+              </div>
+              <div class="hei-list">
+                <div class="study-card">
+                  <div class="study-card__body">
+                    <div class="study-card__title">
+                      <a
+                        href="#!"
+                        class="text-lg text-bold text-on-surface text-decoration-none">
+                        Andijon davlat chet tillari instituti
+                      </a>
+                    </div>
+                    <div class="study-card__meta">
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--primary"
+                        ></span>
+                        <span class="text-on-surface-variant">16</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--info"></span>
+                        <span class="text-on-surface-variant">480</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--success"
+                        ></span>
+                        <span class="text-on-surface-variant">333.9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#!" class="btn btn--secondary">Batafsil</a>
+                </div>
+                <div class="study-card">
+                  <div class="study-card__body">
+                    <div class="study-card__title">
+                      <a
+                        href="#!"
+                        class="text-lg text-bold text-on-surface text-decoration-none">
+                        Andijon davlat chet tillari instituti
+                      </a>
+                    </div>
+                    <div class="study-card__meta">
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--primary"
+                        ></span>
+                        <span class="text-on-surface-variant">16</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--info"></span>
+                        <span class="text-on-surface-variant">480</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--success"
+                        ></span>
+                        <span class="text-on-surface-variant">333.9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#!" class="btn btn--secondary">Batafsil</a>
+                </div>
+                <div class="study-card">
+                  <div class="study-card__body">
+                    <div class="study-card__title">
+                      <a
+                        href="#!"
+                        class="text-lg text-bold text-on-surface text-decoration-none">
+                        Andijon davlat chet tillari instituti
+                      </a>
+                    </div>
+                    <div class="study-card__meta">
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--primary"
+                        ></span>
+                        <span class="text-on-surface-variant">16</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--info"></span>
+                        <span class="text-on-surface-variant">480</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--success"
+                        ></span>
+                        <span class="text-on-surface-variant">333.9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#!" class="btn btn--secondary">Batafsil</a>
+                </div>
+                <div class="study-card">
+                  <div class="study-card__body">
+                    <div class="study-card__title">
+                      <a
+                        href="#!"
+                        class="text-lg text-bold text-on-surface text-decoration-none">
+                        Andijon davlat chet tillari instituti
+                      </a>
+                    </div>
+                    <div class="study-card__meta">
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--primary"
+                        ></span>
+                        <span class="text-on-surface-variant">16</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--info"></span>
+                        <span class="text-on-surface-variant">480</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--success"
+                        ></span>
+                        <span class="text-on-surface-variant">333.9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#!" class="btn btn--secondary">Batafsil</a>
+                </div>
+                <div class="study-card">
+                  <div class="study-card__body">
+                    <div class="study-card__title">
+                      <a
+                        href="#!"
+                        class="text-lg text-bold text-on-surface text-decoration-none">
+                        Andijon davlat chet tillari instituti
+                      </a>
+                    </div>
+                    <div class="study-card__meta">
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--primary"
+                        ></span>
+                        <span class="text-on-surface-variant">16</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--info"></span>
+                        <span class="text-on-surface-variant">480</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--success"
+                        ></span>
+                        <span class="text-on-surface-variant">333.9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#!" class="btn btn--secondary">Batafsil</a>
+                </div>
+                <div class="study-card">
+                  <div class="study-card__body">
+                    <div class="study-card__title">
+                      <a
+                        href="#!"
+                        class="text-lg text-bold text-on-surface text-decoration-none">
+                        Andijon davlat chet tillari instituti
+                      </a>
+                    </div>
+                    <div class="study-card__meta">
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--primary"
+                        ></span>
+                        <span class="text-on-surface-variant">16</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--info"></span>
+                        <span class="text-on-surface-variant">480</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--success"
+                        ></span>
+                        <span class="text-on-surface-variant">333.9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#!" class="btn btn--secondary">Batafsil</a>
+                </div>
+                <div class="study-card">
+                  <div class="study-card__body">
+                    <div class="study-card__title">
+                      <a
+                        href="#!"
+                        class="text-lg text-bold text-on-surface text-decoration-none">
+                        Andijon davlat chet tillari instituti
+                      </a>
+                    </div>
+                    <div class="study-card__meta">
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--primary"
+                        ></span>
+                        <span class="text-on-surface-variant">16</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--info"></span>
+                        <span class="text-on-surface-variant">480</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--success"
+                        ></span>
+                        <span class="text-on-surface-variant">333.9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#!" class="btn btn--secondary">Batafsil</a>
+                </div>
+                <div class="study-card">
+                  <div class="study-card__body">
+                    <div class="study-card__title">
+                      <a
+                        href="#!"
+                        class="text-lg text-bold text-on-surface text-decoration-none">
+                        Andijon davlat chet tillari instituti
+                      </a>
+                    </div>
+                    <div class="study-card__meta">
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--primary"
+                        ></span>
+                        <span class="text-on-surface-variant">16</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--info"></span>
+                        <span class="text-on-surface-variant">480</span>
+                      </div>
+                      <div class="icon-text study-card__meta-value">
+                        <span class="detail-bullet detail-bullet--success"
+                        ></span>
+                        <span class="text-on-surface-variant">333.9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#!" class="btn btn--secondary">Batafsil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Blockquote</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="blockquote">
+                <div class="blockquote__icon">
+                  <i class="ti ti-quote-filled text-primary"></i>
+                </div>
+                <div class="blockquote__text">
+                  <i class="text-lg"
+                    >Unda O‘zbekiston, Qozog‘iston, Qirg‘iziston va Belarusdan
+                    nomzodlar ishtirok etishi mumkin.</i
+                  >
+                  <b>- Author’s name</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Tags</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="d-flex mb-lg">
+                <a href="#!" class="tag">Share section</a>
+              </div>
+              <div class="share-section">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="d-flex flex-column gap-smd">
+                      <span>Teglar</span>
+                      <div class="d-flex flex-wrap gap-sm">
+                        <a href="#!" class="tag">IT sohasi</a>
+                        <a href="#!" class="tag">IT park</a>
+                        <a href="#!" class="tag">dasturchi bo'lish</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="d-flex flex-column gap-smd">
+                      <span>Ulashing</span>
+                      <div class="d-flex flex-wrap gap-sm">
+                        <a
+                          href="#!"
+                          class="btn btn--primary btn--sm btn--icon"
+                          style="--bg-color: var(--color-blue-800);--border-color: var(--color-blue-800);">
+                          <i class="ti ti-brand-facebook"></i>
+                        </a>
+                        <a
+                          href="#!"
+                          class="btn btn--primary btn--sm btn--icon"
+                          style="--bg-color: var(--color-sky-500);--border-color: var(--color-sky-500);">
+                          <i class="ti ti-brand-telegram"></i>
+                        </a>
+                        <a href="#!" class="btn btn--sm btn--secondary"
+                          >oliygoh.uz/lbk</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Filter</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex flex-column mb-lg">
+                <div class="filter-item active">
+                  <a href="#!">Some filter</a>
+                </div>
+                <div class="filter-item">
+                  <a href="#!">Some filter</a>
+                </div>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="section">
+                  <div class="filter-list">
+                    <div class="filter-item active">
+                      <a href="#!">Some filter</a>
+                    </div>
+                    <div class="filter-item">
+                      <a href="#!">Some filter</a>
+                    </div>
+                    <div class="filter-item">
+                      <a href="#!">Some filter</a>
+                    </div>
+                    <div class="filter-item">
+                      <a href="#!">Some filter</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Exam meta</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex flex-column mb-lg">
+                <div class="exam-meta-item text-bold text-center">
+                  <span class="text-on-surface-variant">Ishtirokchilar</span>
+                  <span class="text-success h4">656365</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="exam-meta">
+                <div class="row">
+                  <div class="col-md-3 col-6">
+                    <div class="exam-meta-item text-bold text-center">
+                      <span class="text-on-surface-variant">Ishtirokchilar</span
+                      >
+                      <span class="text-success h4">656365</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <div class="exam-meta-item text-bold text-center">
+                      <span class="text-on-surface-variant"
+                        >Variantlar soni</span
+                      >
+                      <span class="text-info h4">366</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <div class="exam-meta-item text-bold text-center">
+                      <span class="text-on-surface-variant"
+                        >O’rtacha natija</span
+                      >
+                      <span class="text-primary h4">30.5%</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <div class="exam-meta-item text-bold text-center">
+                      <span class="text-on-surface-variant"
+                        >Maksimal natija</span
+                      >
+                      <span class="text-warning h4">100%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Profile</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex flex-column mb-lg">
+                <div class="profile-total text-center">
+                  <div class="text-on-surface-variant">NATIJALAR</div>
+                  <dl class="row gap-0">
+                    <div class="col-4">
+                      <div class="desc-block">
+                        <span>0</span>
+                        <span class="text-on-surface-variant">Testlar</span>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="desc-block">
+                        <span>0%</span>
+                        <span class="text-on-surface-variant">Haftalik</span>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="desc-block">
+                        <span>0%</span>
+                        <span class="text-on-surface-variant">Umumiy</span>
+                      </div>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="d-flex mb-lg">
+                <div class="profile-avatar text-on-surface-variant">
+                  <i class="ti ti-user"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="profile-main-block">
+                <div class="profile-avatar text-on-surface-variant">
+                  <i class="ti ti-user"></i>
+                </div>
+                <div class="profile-main-block__body">
+                  <h5 class="h5">Azamat Sharipov</h5>
+                  <a href="#!" class="text-primary text-decoration-none"
+                    >91 357-39-79</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Nav block</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex flex-column mb-lg">
+                <nav class="d-flex flex-column">
+                  <a href="#!" class="nav-item">
+                    <i class="ti ti-logout"></i> Some kind of a link</a
+                  >
+                  <a href="#!" class="nav-item active">
+                    <i class="ti ti-logout"></i> Some kind of a link</a
+                  >
+                </nav>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <nav class="profile-nav">
+                <a href="#!" class="nav-item">
+                  <i class="ti ti-award"></i> Natijalarim</a
+                >
+                <a href="#!" class="nav-item">
+                  <i class="ti ti-settings"></i> Sozlamalar</a
+                >
+                <a href="#!" class="nav-item">
+                  <i class="ti ti-logout"></i> Chiqish</a
+                >
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Icon card</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex flex-column mb-lg">
+                <div class="icon-card">
+                  <i class="ti ti-help icon-card__icon"></i>
+                  <div class="desc-block icon-card__desc">
+                    <span class="text-on-surface-variant"
+                      >Savollaringiz bormi?</span
+                    >
+                    <a href="#!" class="text-primary text-decoration-none"
+                      >Onlayn murojaat</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Table</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table table--striped">
+                <thead>
+                  <tr>
+                    <th>Holo San</th>
+                    <th>Microb</th>
+                    <th>Microb</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="d-flex flex-column">
+                        <span>Axborot xavfsizligi (sohalar bo‘yicha)</span>
+                        <span class="text-on-surface-variant"
+                          >60610300 / Matematika / Fizika</span
+                        >
+                      </div>
+                    </td>
+                    <td>123.8</td>
+                    <td>84</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex flex-column">
+                        <span>Axborot xavfsizligi (sohalar bo‘yicha)</span>
+                        <span class="text-on-surface-variant"
+                          >60610300 / Matematika / Fizika</span
+                        >
+                      </div>
+                    </td>
+                    <td>123.8</td>
+                    <td>84</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex flex-column">
+                        <span>Axborot xavfsizligi (sohalar bo‘yicha)</span>
+                        <span class="text-on-surface-variant"
+                          >60610300 / Matematika / Fizika</span
+                        >
+                      </div>
+                    </td>
+                    <td>123.8</td>
+                    <td>84</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex flex-column">
+                        <span>Axborot xavfsizligi (sohalar bo‘yicha)</span>
+                        <span class="text-on-surface-variant"
+                          >60610300 / Matematika / Fizika</span
+                        >
+                      </div>
+                    </td>
+                    <td>123.8</td>
+                    <td>84</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex flex-column">
+                        <span>Axborot xavfsizligi (sohalar bo‘yicha)</span>
+                        <span class="text-on-surface-variant"
+                          >60610300 / Matematika / Fizika</span
+                        >
+                      </div>
+                    </td>
+                    <td>123.8</td>
+                    <td>84</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-lg">
+        <div class="col-md-3">
+          <h1 class="h3">Pagination</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="d-flex flex-column gap-lg">
+                <ul class="pagination">
+                  <li class="pagination__item">
+                    <a href="#!" class="btn btn--icon">
+                      <i class="ti ti-chevron-left"></i>
+                    </a>
+                  </li>
+                  <li class="pagination__item active">
+                    <a href="#!" class="btn btn--icon">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#!" class="btn btn--icon">1</a>
+                  </li>
+                </ul>
+                <ul class="pagination">
+                  <li class="pagination__item">
+                    <a href="#!" class="btn btn--icon">
+                      <i class="ti ti-chevron-left"></i>
+                    </a>
+                  </li>
+                  <li class="pagination__item active">
+                    <a href="#!" class="btn btn--icon">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#!" class="btn btn--icon">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#!" class="btn btn--icon">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#!" class="btn btn--icon">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#!" class="btn btn--icon">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#!" class="btn btn--icon">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#!" class="btn btn--icon">1</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-2xl">
+        <div class="col-md-3">
+          <h1 class="h3">Form control</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="d-flex gap-lg mb-2xl">
+                <div class="toggle-input">
+                  <input id="for" type="checkbox" class="custom-checkbox" />
+                  <label for="for">Label for</label>
+                </div>
+                <div class="toggle-input">
+                  <input
+                    id="for1"
+                    type="radio"
+                    class="custom-radio"
+                    name="one"
+                  />
+                  <label for="for1">Label for</label>
+                </div>
+                <div class="toggle-input">
+                  <input
+                    id="for2"
+                    type="radio"
+                    class="custom-radio"
+                    name="one"
+                  />
+                  <label for="for2">Label for</label>
+                </div>
+                <div class="toggle-input">
+                  <input
+                    id="for3"
+                    type="checkbox"
+                    class="custom-switch"
+                    name="one"
+                  />
+                  <label for="for3">Label for</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-2xl">
+        <div class="col-md-3">
+          <h1 class="h3">Form input</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="d-flex gap-lg align-items-center mb-2xl flex-wrap">
+                <div class="input input--sm">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Placeholder for input text"
+                  />
+                </div>
+                <div class="input">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Placeholder for input text"
+                  />
+                </div><div class="input input--lg">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Placeholder for input text"
+                  />
+                </div>
+              </div>
+              <div class="d-flex gap-lg align-items-center mb-2xl">
+                <div class="input-addon input-addon--sm">Some addon</div>
+                <div class="input-addon">Some addon</div>
+                <div class="input-addon input-addon--lg">Some addon</div>
+              </div>
+              <div class="d-flex flex-wrap gap-lg align-items-center mb-2xl">
+                <div class="input">
+                  <div class="input-addon">+998</div>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Placeholder for input text"
+                  />
+                  <div class="input-addon">+998</div>
+                </div>
+                <div class="input">
+                  <div class="input-addon">+998</div>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Placeholder for input text"
+                  />
+                  <button class="btn btn--secondary">Submit</button>
+                </div>
+                <div class="input input--sm">
+                  <div class="input-addon input-addon--sm">+998</div>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Placeholder for input text"
+                  />
+                  <button class="btn btn--secondary btn--sm">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-2xl">
+        <div class="col-md-3">
+          <h1 class="h3">Form control</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex flex-column gap-lg mb-2xl">
+                <div class="d-flex align-items-center gap-lg">
+                  <div class="helper-feedback">
+                    <i class="ti ti-info-circle helper-feedback__icon"></i> 8 characters
+                  </div>
+                  <div class="helper-feedback helper-feedback--error">
+                    <i class="ti ti-alert-circle helper-feedback__icon"></i> Invalid
+                    password
+                  </div>
+                  <div class="helper-feedback helper-feedback--success">
+                    <i class="ti ti-circle-check helper-feedback__icon"></i> Valid
+                    password
+                  </div>
+                </div>
+                <div>
+                  <form action="" class="form">
+                    <div class="form-group">
+                      <label for="input1">Joylashgan hudud </label>
+                      <div class="input">
+                        <input type="text" placeholder="" />
+                      </div>
+                      <div class="helper-feedback">Hududni tanlang</div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-2xl">
+        <div class="col-md-3">
+          <h1 class="h3">Test elems</h1>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="d-flex flex-column gap-lg mb-2xl">
+                <div class="d-flex align-items-center gap-lg">
+                  <div class="answer">
+                    <div class="answer__check">
+                      <input
+                        id="answer1"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                    </div>
+                    <label for="answer1" class="answer__content">
+                      <div class="text-medium">Some answer</div>
+                    </label>
+                  </div>
+                  <div class="answer">
+                    <div class="answer__check">
+                      <input id="answer11" type="radio" class="custom-radio" />
+                    </div>
+                    <label for="answer11" class="answer__content">
+                      <div class="text-medium">Some answer</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-lg">
+                  <div class="answer">
+                    <div class="answer__check">
+                      <input
+                        id="answer2"
+                        type="checkbox"
+                        class="custom-checkbox"
+                      />
+                    </div>
+                    <label for="answer2" class="answer__content">
+                      <div class="text-medium">Some answer</div>
+                      <div class="text-on-surface">Some answer</div>
+                      <img
+                        src="https://lh4.googleusercontent.com/proxy/opdk_7VtQfzJGdXxwR4CrSXohKC9xodMqwiBfFrCk6r78uC81wJfAt4dj0TrtZCvseTaRvMAKPYnwveq1U0HYBEMREVWRPlHGkr0ntCtiJvSo_7rL8Kg1HWUGysiI_W5aw"
+                        alt=""
+                        width="135"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-lg">
+                  <div class="test-time w-full">
+                    <div class="test-time__body">
+                      <div class="test-time__context">
+                        <div class="desc-block test-time__meta">
+                          <div class="text-medium">02:43:20</div>
+                          <div class="text-on-surface-variant">Qolgan vaqt</div>
+                        </div>
+                        <div class="desc-block test-time__meta">
+                          <div class="text-medium">14688</div>
+                          <div class="text-on-surface-variant">
+                            Ishtirokchilar
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#!" class="btn btn--primary">Testni yakunlash</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-lg">
+                  <div class="quiz">
+                    <div class="quiz__head">
+                      <ol class="m-0">
+                        <li>
+                          Muhammadali asosiy imtihonga tayyorgarlik uchun kitob
+                          o‘qishni boshladi. U o‘qiyotgan ikki ketma-ket
+                          sahifalardagi sonlar yig‘indisi 177 ga teng. U qaysi
+                          betni o‘qiyotgan bo‘lishi mumkin?
+                        </li>
+                      </ol>
+                      <img
+                        src="https://static.oliygoh.uz/test/657c981561245808520ea64217026642130/image5.png?t=1702664250"
+                        alt=""
+                        width="135"
+                        height="124"
+                      />
+                    </div>
+                    <div class="quiz__body">
+                      <div class="quiz__variants">
+                        <div class="answer">
+                          <div class="answer__check">
+                            <input
+                              id="quizans1"
+                              name="answering"
+                              type="radio"
+                              class="custom-radio"
+                            />
+                          </div>
+                          <label for="quizans1" class="answer__content">
+                            <div class="text-medium">90</div>
+                          </label>
+                        </div>
+                        <div class="answer">
+                          <div class="answer__check">
+                            <input
+                              id="quizans2"
+                              name="answering"
+                              type="radio"
+                              class="custom-radio"
+                            />
+                          </div>
+                          <label for="quizans2" class="answer__content">
+                            <div class="text-medium">86</div>
+                          </label>
+                        </div>
+                        <div class="answer">
+                          <div class="answer__check">
+                            <input
+                              id="quizans3"
+                              name="answering"
+                              type="radio"
+                              class="custom-radio"
+                            />
+                          </div>
+                          <label for="quizans3" class="answer__content">
+                            <div class="text-medium">88</div>
+                          </label>
+                        </div>
+                        <div class="answer">
+                          <div class="answer__check">
+                            <input
+                              id="quizans4"
+                              name="answering"
+                              type="radio"
+                              class="custom-radio"
+                            />
+                          </div>
+                          <label for="quizans4" class="answer__content">
+                            <div class="text-medium">87</div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-lg">
+                  <div class="test-header">
+                    <h1 class="text-md">
+                      Matematika <span class="text-on-surface-variant"
+                        >(DTM_10321)</span
+                      >
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-main__content">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="brand-logo">Logo</div>
+              </div>
+              <div class="col-md-4">
+                <div class="footer-nav">
+                  <div class="text-sm text-on-surface-variant">Bo'limlar</div>
+                  <div class="d-flex flex-wrap gap-sm">
+                    <a href="#!" class="chip">abituriyent</a>
+                    <a href="#!" class="chip">reyting</a>
+                    <a href="#!" class="chip">abituriyent2024</a>
+                    <a href="#!" class="chip">qabul-2024</a>
+                    <a href="#!" class="chip">maqsadli qabul</a>
+                    <a href="#!" class="chip">magistratura</a>
+                    <a href="#!" class="chip">talaba</a>
+                    <a href="#!" class="chip">Qabul-2023</a>
+                    <a href="#!" class="chip">Xalqaro grant</a>
+                    <a href="#!" class="chip">maktab</a>
+                    <a href="#!" class="chip"
+                      >oliy ta'lim fan va innovatsiyalar vazirligi</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-6">
+                <div class="footer-nav">
+                  <div class="text-sm text-on-surface-variant">Bo'limlar</div>
+                  <ul class="link-list">
+                    <li class="link-list__item">
+                      <a href="#!" class="link">Grantlar</a>
+                    </li>
+                    <li class="link-list__item">
+                      <a href="#!" class="link">Oliygohlar</a>
+                    </li>
+                    <li class="link-list__item">
+                      <a href="#!" class="link">Yangiliklar</a>
+                    </li>
+                    <li class="link-list__item">
+                      <a href="#!" class="link">DTM Testlar</a>
+                    </li>
+                    <li class="link-list__item">
+                      <a href="#!" class="link">PM Testlar</a>
+                    </li>
+                    <li class="link-list__item">
+                      <a href="#!" class="link">Ma’lumotlar</a>
+                    </li>
+                    <li class="link-list__item">
+                      <a href="#!" class="link">Imtihonlar</a>
+                    </li>
+                    <li class="link-list__item">
+                      <a href="#!" class="link">Grantlar</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-2 col-6">
+                <div class="footer-nav">
+                  <div class="text-sm text-on-surface-variant">
+                    Ijtimoiy tarmoqlar
+                  </div>
+                  <ul class="link-list">
+                    <li class="link-list__item">
+                      <a href="#!" class="link">Telegram</a>
+                    </li>
+                    <li class="link-list__item">
+                      <a href="#!" class="link">Oliygohlar</a>
+                    </li>
+                    <li class="link-list__item">
+                      <a href="#!" class="link">Facebook</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom__content">
+            <div class="row">
+              <div class="col-md-6">
+                2024 © Oliygoh.uz, Barcha huquqlar himoyalangan
+              </div>
+              <div class="col-md-6 text-md-end">
+                <a href="#!" class="text-on-surface text-decoration-none"
+                  >Foydalanish shartlari</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+
+</html>

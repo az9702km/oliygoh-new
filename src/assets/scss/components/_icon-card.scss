@@ -1,0 +1,42 @@
+.icon-card {
+  --padding-top: var(--icon-card-padding-top);
+  --padding-right: var(--icon-card-padding-right);
+  --padding-bottom: var(--icon-card-padding-bottom);
+  --padding-left: var(--icon-card-padding-left);
+  --gap: var(--icon-card-gap);
+  --border-radius-top-left: var(--icon-card-border-radius-top-left);
+  --border-radius-top-right: var(--icon-card-border-radius-top-right);
+  --border-radius-bottom-right: var(--icon-card-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--icon-card-border-radius-bottom-left);
+  --border-color: var(--icon-card-border-color);
+  --border-style: solid;
+  --border-width-top: var(--icon-card-border-width-top);
+  --border-width-right: var(--icon-card-border-width-right);
+  --border-width-bottom: var(--icon-card-border-width-bottom);
+  --border-width-left: var(--icon-card-border-width-left);
+  --opacity: var(--icon-card-opacity);
+  --bg-color: var(--icon-card-bg-color);
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+
+  &__icon {
+    font-size: 2rem;
+  }
+
+  &__desc {
+    flex-grow: 1;
+  }
+}

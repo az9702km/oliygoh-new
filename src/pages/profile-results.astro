@@ -1,0 +1,122 @@
+---
+import Card from "../components/Card.astro";
+import CardArticle from "../components/CardArticle.astro";
+import FormGroup from "../components/FormGroup.astro";
+import IconCard from "../components/IconCard.astro";
+import InputToggle from "../components/InputToggle.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import ProfileMainBlock from "../components/ProfileMainBlock.astro";
+import ProfileNav from "../components/ProfileNav.astro";
+import ProfileTotal from "../components/ProfileTotal.astro";
+import Table from "../components/Table.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="bg-surface-low py-2xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="section">
+            <ProfileMainBlock />
+            <ProfileTotal />
+            <ProfileNav>
+              <a href="#!" class="nav-item active">
+                <i class="ti ti-award"></i> Natijalarim</a
+              >
+              <a href="#!" class="nav-item">
+                <i class="ti ti-settings"></i> Sozlamalar</a
+              >
+              <a href="#!" class="nav-item">
+                <i class="ti ti-logout"></i> Chiqish</a
+              >
+            </ProfileNav>
+            <IconCard />
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="section">
+            <h4 class="h4 mb-lg">Qo'shimcha ma'lumotlar</h4>
+            <Table>
+              <thead>
+                <th>Test</th>
+                <th class="text-end">Natija</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#!">Prezident maktabi testlari 2024</a>
+                    <div class="text-on-surface-variant">
+                      25-noyabr 14:02 / 2 daq.
+                    </div>
+                  </td>
+                  <td class="text-end">1 / 3.3% / -</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#!">Prezident maktabi testlari 2024</a>
+                    <div class="text-on-surface-variant">
+                      25-noyabr 14:02 / 2 daq.
+                    </div>
+                  </td>
+                  <td class="text-end">1 / 3.3% / -</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#!">Prezident maktabi testlari 2024</a>
+                    <div class="text-on-surface-variant">
+                      25-noyabr 14:02 / 2 daq.
+                    </div>
+                  </td>
+                  <td class="text-end">1 / 3.3% / -</td>
+                </tr>
+              </tbody>
+            </Table>
+            <h4 class="h4 my-lg">DTM Diagnostik testlar</h4>
+            <Table>
+              <thead>
+                <th>Test</th>
+                <th>Natija</th>
+                <th class="text-end">Vaqt</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#!">Respublika Diagnostik imtihon #71</a>
+                    <div class="text-on-surface-variant">
+                      Matematika / Fizika / Majburiy fanlar
+                    </div>
+                  </td>
+                  <td>
+                    <div>2×3.1+0×2.1+0×1.1=6.2</div>
+                    <div>
+                      /<a href="#!">Sertifikat</a>
+                    </div>
+                  </td>
+                  <td class="text-end">136 daq.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#!">Respublika Diagnostik imtihon #71</a>
+                    <div class="text-on-surface-variant">
+                      Matematika / Fizika / Majburiy fanlar
+                    </div>
+                  </td>
+                  <td>
+                    <div>2×3.1+0×2.1+0×1.1=6.2</div>
+                    <div>
+                      /<a href="#!">Sertifikat</a>
+                    </div>
+                  </td>
+                  <td class="text-end">1 / 3.3% / -</td>
+                </tr>
+              </tbody>
+            </Table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

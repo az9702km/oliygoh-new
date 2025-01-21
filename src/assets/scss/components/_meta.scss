@@ -1,0 +1,44 @@
+.meta {
+  --padding-top: var(--meta-padding-top);
+  --padding-right: var(--meta-padding-right);
+  --padding-bottom: var(--meta-padding-bottom);
+  --padding-left: var(--meta-padding-left);
+  --gap: var(--meta-gap);
+  --bg-color: var(--meta-bg-color);
+  --border-width-top: var(--meta-border-width-top);
+  --border-width-right: var(--meta-border-width-top);
+  --border-width-bottom: var(--meta-border-width-top);
+  --border-width-left: var(--meta-border-width-top);
+  --border-color: var(--meta-border-color);
+  --border-style: solid;
+  --border-radius-top-left: var(--meta-border-radius-top-left);
+  --border-radius-top-right: var(--meta-border-radius-top-right);
+  --border-radius-bottom-right: var(--meta-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--meta-border-radius-bottom-left);
+  --opacity: var(--meta-opacity);
+  --text-size: var(--body-font-size-body-sm);
+  --text-line-height: var(--body-font-lh-body-sm);
+  --text-color: var(--colors-text-on-primary);
+  display: flex;
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  align-items: center;
+  gap: var(--gap);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+  color: var(--text-color);
+
+  /* body/sm */
+  font-size: var(--text-size);
+  line-height: var(--text-lh);
+  text-decoration: none;
+  /* 142.857% */
+}

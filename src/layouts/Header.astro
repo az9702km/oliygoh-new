@@ -1,0 +1,51 @@
+---
+import BrandLogo from "../components/BrandLogo.astro";
+---
+
+<header class="header">
+  <div class="header-top d-none d-md-block">
+    <div class="container">
+      <div class="header-top__inner">
+        <div class="row">
+          <div class="col-6">
+            <div class="header-top-brand">
+              <BrandLogo height="32" />
+              <div class="slogan text-on-surface-variant text-sub">
+                Aniq maqsad - g’alabaga yetaklaydi
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex align-items-center justify-content-end">
+            <a href="#!" class="btn btn--primary btn--sm">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="container">
+      <div class="navbar__inner">
+        <div class="row" style="grid-row-gap: 0;">
+          <div class="col-lg-8">
+            <nav class="nav">
+              <a href="/universities" class="nav__link">Oliygohlar</a>
+              <a href="/news" class="nav__link">Yangiliklar</a>
+              <a href="/dtm-tests" class="nav__link">DTM Testlar</a>
+              <a href="/pm-tests" class="nav__link">PM Testlar</a>
+              <a href="/articles" class="nav__link"
+                >Ma’lumotlar <i class="ti ti-chevron-down"></i></a
+              >
+              <a href="/mandat" class="nav__link">Mandat</a>
+              <a href="/grants" class="nav__link">Grantlar</a>
+            </nav>
+          </div>
+          <div class="col-lg-4 d-flex align-items-center justify-content-end">
+            <a href="#!" class="btn btn--primary btn--icon">
+              <i class="ti ti-search"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

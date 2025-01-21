@@ -1,0 +1,78 @@
+@for $i from 1 through $columns {
+  .col-start-#{$i} {
+    grid-column-start: #{$i + 1} !important;
+  }
+  .col-end-#{$i} {
+    grid-column-end: #{$i + 1} !important;
+  }
+  .col-#{$i} {
+    grid-column: auto / span #{$i};
+  }
+}
+
+@for $i from 1 through $columns {
+  @include media-max(md) {
+    .col-#{$i}[class*="col-md"],
+    .col-#{$i}[class*="col-lg"] {
+      grid-column: auto / span #{$i};
+    }
+  }
+}
+
+@each $breakpoint, $breakpoint-variable in $breakpoints {
+  @for $i from 1 through $columns {
+    .col-#{$breakpoint}-#{$i} {
+      grid-column: auto / span $columns;
+    }
+  }
+}
+
+@each $breakpoint, $breakpoint-variable in $breakpoints {
+  @for $i from 1 through $columns {
+    @include media($breakpoint) {
+      .col-start-#{$breakpoint}-#{$i} {
+        grid-column-start: #{$i + 1} !important;
+      }
+      .col-end-#{$breakpoint}-#{$i} {
+        grid-column-end: #{$i + 1} !important;
+      }
+      .col-#{$breakpoint}-#{$i} {
+        grid-column: auto / span $i;
+      }
+    }
+  }
+}
+
+.container {
+  --max-width: unset;
+  max-width: var(--max-width);
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 0.5rem;
+
+  @include media(md) {
+    padding: 0;
+  }
+}
+
+.row {
+  --gutter: var(--row-xl-gutter);
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-gap: var(--gutter);
+}
+
+@media (min-width: 1400px) {
+  .container {
+    --max-width: var(--container-xl-max-width);
+  }
+}
+
+@each $breakpoint, $breakpoint-variable in $breakpoints {
+  @include media($breakpoint) {
+    .container {
+      --max-width: var(--container-#{$breakpoint}-max-width);
+    }
+  }
+}

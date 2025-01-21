@@ -1,0 +1,81 @@
+.nav-item {
+  --padding-top: var(--nav-item-padding-top);
+  --padding-right: var(--nav-item-padding-right);
+  --padding-bottom: var(--nav-item-padding-bottom);
+  --padding-left: var(--nav-item-padding-left);
+  --gap: var(--nav-item-gap);
+  --border-radius-top-left: var(--nav-item-border-radius-top-left);
+  --border-radius-top-right: var(--nav-item-border-radius-top-right);
+  --border-radius-bottom-right: var(--nav-item-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--nav-item-border-radius-bottom-left);
+  --border-color: var(--nav-item-border-color);
+  --border-style: solid;
+  --border-width-top: var(--nav-item-border-width-top);
+  --border-width-right: var(--nav-item-border-width-right);
+  --border-width-bottom: var(--nav-item-border-width-bottom);
+  --border-width-left: var(--nav-item-border-width-left);
+  --opacity: var(--nav-item-opacity);
+  --bg-color: var(--nav-item-bg-color);
+  --color: var(--nav-item-text-color);
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+  font-weight: var(--body-font-weight-medium);
+  text-decoration: none;
+  color: var(--color);
+  transition: 0.15s all ease-in-out;
+
+  &.active,
+  &:hover {
+    --color: var(--nav-item--active-text-color);
+    --bg-color: var(--nav-item--active-bg-color);
+    transition: 0.15s all ease-in-out;
+  }
+}
+
+.profile-nav {
+  --padding-top: var(--profile-nav-padding-top);
+  --padding-right: var(--profile-nav-padding-right);
+  --padding-bottom: var(--profile-nav-padding-bottom);
+  --padding-left: var(--profile-nav-padding-left);
+  --gap: var(--profile-nav-gap);
+  --border-radius-top-left: var(--profile-nav-border-radius-top-left);
+  --border-radius-top-right: var(--profile-nav-border-radius-top-right);
+  --border-radius-bottom-right: var(--profile-nav-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--profile-nav-border-radius-bottom-left);
+  --border-color: var(--profile-nav-border-color);
+  --border-style: solid;
+  --border-width-top: var(--profile-nav-border-width-top);
+  --border-width-right: var(--profile-nav-border-width-right);
+  --border-width-bottom: var(--profile-nav-border-width-bottom);
+  --border-width-left: var(--profile-nav-border-width-left);
+  --opacity: var(--profile-nav-opacity);
+  --bg-color: var(--profile-nav-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+}

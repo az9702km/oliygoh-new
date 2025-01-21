@@ -1,0 +1,185 @@
+.desc-block {
+  --padding-top: var(--desc-block-padding-top);
+  --padding-right: var(--desc-block-padding-right);
+  --padding-bottom: var(--desc-block-padding-bottom);
+  --padding-left: var(--desc-block-padding-left);
+  --gap: var(--desc-block-gap);
+  --border-radius-top-left: var(--desc-block-border-radius-top-left);
+  --border-radius-top-right: var(--desc-block-border-radius-top-right);
+  --border-radius-bottom-right: var(--desc-block-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--desc-block-border-radius-bottom-left);
+  --border-color: var(--desc-block-border-color);
+  --border-style: solid;
+  --border-width-top: var(--desc-block-border-width-top);
+  --border-width-right: var(--desc-block-border-width-right);
+  --border-width-bottom: var(--desc-block-border-width-bottom);
+  --border-width-left: var(--desc-block-border-width-left);
+  --opacity: var(--desc-block-opacity);
+  --bg-color: var(--desc-block-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+}
+
+.annotations {
+  --padding-top: var(--annotation-padding-top);
+  --padding-right: var(--annotation-padding-right);
+  --padding-bottom: var(--annotation-padding-bottom);
+  --padding-left: var(--annotation-padding-left);
+  --gap: var(--annotation-gap);
+  --border-radius-top-left: var(--annotation-border-radius-top-left);
+  --border-radius-top-right: var(--annotation-border-radius-top-right);
+  --border-radius-bottom-right: var(--annotation-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--annotation-border-radius-bottom-left);
+  --border-color: var(--annotation-border-color);
+  --border-style: solid;
+  --border-width-top: var(--annotation-border-width-top);
+  --border-width-right: var(--annotation-border-width-right);
+  --border-width-bottom: var(--annotation-border-width-bottom);
+  --border-width-left: var(--annotation-border-width-left);
+  --opacity: var(--annotation-opacity);
+  --bg-color: var(--annotation-bg-color);
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+}
+
+.hei-card {
+  --padding-top: var(--hei-card-padding-top);
+  --padding-right: var(--hei-card-padding-right);
+  --padding-bottom: var(--hei-card-padding-bottom);
+  --padding-left: var(--hei-card-padding-left);
+  --gap: var(--hei-card-gap);
+  --border-radius-top-left: var(--hei-card-border-radius-top-left);
+  --border-radius-top-right: var(--hei-card-border-radius-top-right);
+  --border-radius-bottom-right: var(--hei-card-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--hei-card-border-radius-bottom-left);
+  --border-color: var(--hei-card-border-color);
+  --border-style: solid;
+  --border-width-top: var(--hei-card-border-width-top);
+  --border-width-right: var(--hei-card-border-width-right);
+  --border-width-bottom: var(--hei-card-border-width-bottom);
+  --border-width-left: var(--hei-card-border-width-left);
+  --opacity: var(--hei-card-opacity);
+  --bg-color: var(--hei-card-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+
+  &__body {
+    --padding-top: var(--hei-card-_body-padding-top);
+    --padding-right: var(--hei-card-_body-padding-right);
+    --padding-bottom: var(--hei-card-_body-padding-bottom);
+    --padding-left: var(--hei-card-_body-padding-left);
+    --gap: var(--hei-card-_body-gap);
+    --border-radius-top-left: var(--hei-card-_body-border-radius-top-left);
+    --border-radius-top-right: var(--hei-card-_body-border-radius-top-right);
+    --border-radius-bottom-right: var(
+      --hei-card-_body-border-radius-bottom-right
+    );
+    --border-radius-bottom-left: var(
+      --hei-card-_body-border-radius-bottom-left
+    );
+    --border-color: var(--hei-card-_body-border-color);
+    --border-style: solid;
+    --border-width-top: var(--hei-card-_body-border-width-top);
+    --border-width-right: var(--hei-card-_body-border-width-right);
+    --border-width-bottom: var(--hei-card-_body-border-width-bottom);
+    --border-width-left: var(--hei-card-_body-border-width-left);
+    --opacity: var(--hei-card-_body-opacity);
+    --bg-color: var(--hei-card-_body-bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+      var(--padding-left);
+    border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+      var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+    border-top-width: var(--border-width-top);
+    border-right-width: var(--border-width-right);
+    border-bottom-width: var(--border-width-bottom);
+    border-left-width: var(--border-width-left);
+    border-color: var(--border-color);
+    border-style: var(--border-style);
+    opacity: var(--opacity);
+    background: var(--bg-color);
+  }
+  &__image {
+    --padding-top: var(--hei-card-_image-padding-top);
+    --padding-right: var(--hei-card-_image-padding-right);
+    --padding-bottom: var(--hei-card-_image-padding-bottom);
+    --padding-left: var(--hei-card-_image-padding-left);
+    --gap: var(--hei-card-_image-gap);
+    --border-radius-top-left: var(--hei-card-_image-border-radius-top-left);
+    --border-radius-top-right: var(--hei-card-_image-border-radius-top-right);
+    --border-radius-bottom-right: var(
+      --hei-card-_image-border-radius-bottom-right
+    );
+    --border-radius-bottom-left: var(
+      --hei-card-_image-border-radius-bottom-left
+    );
+    --border-color: var(--hei-card-_image-border-color);
+    --border-style: solid;
+    --border-width-top: var(--hei-card-_image-border-width-top);
+    --border-width-right: var(--hei-card-_image-border-width-right);
+    --border-width-bottom: var(--hei-card-_image-border-width-bottom);
+    --border-width-left: var(--hei-card-_image-border-width-left);
+    --opacity: var(--hei-card-_image-opacity);
+    --bg-color: var(--hei-card-_image-bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+      var(--padding-left);
+    border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+      var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+    border-top-width: var(--border-width-top);
+    border-right-width: var(--border-width-right);
+    border-bottom-width: var(--border-width-bottom);
+    border-left-width: var(--border-width-left);
+    border-color: var(--border-color);
+    border-style: var(--border-style);
+    opacity: var(--opacity);
+    background: var(--bg-color);
+
+    img {
+      display: block;
+    }
+  }
+}

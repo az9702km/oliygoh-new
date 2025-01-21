@@ -1,0 +1,77 @@
+---
+import Card from "../components/Card.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="bg-surface-low py-2xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="section-title h4">Ta'lim yangiliklari</h1>
+          <div class="row">
+            <div class="col-md-4">
+              <Card />
+            </div>
+            <div class="col-md-4">
+              <Card />
+            </div>
+            <div class="col-md-4">
+              <Card />
+            </div>
+            <div class="col-md-4">
+              <Card />
+            </div>
+            <div class="col-md-4">
+              <Card />
+            </div>
+            <div class="col-md-4">
+              <Card />
+            </div>
+            <div class="col-md-4">
+              <Card />
+            </div>
+            <div class="col-md-4">
+              <Card />
+            </div>
+            <div class="col-md-4">
+              <Card />
+            </div>
+            <div class="col-md-4">
+              <Card />
+            </div>
+            <div class="col-md-4">
+              <Card />
+            </div>
+            <div class="col-md-4">
+              <Card />
+            </div>
+          </div>
+          <div class="d-flex justify-content-end pt-xl mt-sm">
+            <Pagination>
+              <PaginationItem>
+                <i class="ti ti-chevron-left"></i>
+              </PaginationItem>
+              <PaginationItem>1 </PaginationItem>
+              <PaginationItem active>2 </PaginationItem>
+              <PaginationItem>.. </PaginationItem>
+              <PaginationItem>4 </PaginationItem>
+              <PaginationItem>
+                <i class="ti ti-chevron-right"></i>
+              </PaginationItem>
+            </Pagination>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <aside class="position-sticky top-0">
+            <h1 class="section-title h4">Ommabop</h1>
+            <PopCardList />
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

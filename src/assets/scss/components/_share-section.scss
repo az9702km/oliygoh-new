@@ -1,0 +1,34 @@
+.share-section {
+  --padding-top: var(--share-section-padding-top);
+  --padding-right: var(--share-section-padding-right);
+  --padding-bottom: var(--share-section-padding-bottom);
+  --padding-left: var(--share-section-padding-left);
+  --gap: var(--share-section-gap);
+  --border-radius-top-left: var(--share-section-border-radius-top-left);
+  --border-radius-top-right: var(--share-section-border-radius-top-right);
+  --border-radius-bottom-right: var(--share-section-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--share-section-border-radius-bottom-left);
+  --border-color: var(--share-section-border-color);
+  --border-style: solid;
+  --border-width-top: var(--share-section-border-width-top);
+  --border-width-right: var(--share-section-border-width-right);
+  --border-width-bottom: var(--share-section-border-width-bottom);
+  --border-width-left: var(--share-section-border-width-left);
+  --opacity: var(--share-section-opacity);
+  --bg-color: var(--share-section-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+}

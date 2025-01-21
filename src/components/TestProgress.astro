@@ -1,0 +1,9 @@
+---
+const { percent, fixed } = Astro.props;
+
+const attr = percent && { style: `--width: ${percent}%` };
+---
+
+<div class="test-progress" class:list={fixed && "fixed"}>
+  <div class="test-progress__bar" {...attr}></div>
+</div>

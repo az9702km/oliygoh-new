@@ -1,0 +1,99 @@
+.helper-feedback {
+  --padding-top: var(--helper-feedback-padding-top);
+  --padding-right: var(--helper-feedback-padding-right);
+  --padding-bottom: var(--helper-feedback-padding-bottom);
+  --padding-left: var(--helper-feedback-padding-left);
+  --gap: var(--helper-feedback-gap);
+  --border-radius-top-left: var(--helper-feedback-border-radius-top-left);
+  --border-radius-top-right: var(--helper-feedback-border-radius-top-right);
+  --border-radius-bottom-right: var(
+    --helper-feedback-border-radius-bottom-right
+  );
+  --border-radius-bottom-left: var(--helper-feedback-border-radius-bottom-left);
+  --border-color: var(--helper-feedback-border-color);
+  --border-style: solid;
+  --border-width-top: var(--helper-feedback-border-width-top);
+  --border-width-right: var(--helper-feedback-border-width-right);
+  --border-width-bottom: var(--helper-feedback-border-width-bottom);
+  --border-width-left: var(--helper-feedback-border-width-left);
+  --opacity: var(--helper-feedback-opacity);
+  --bg-color: var(--helper-feedback-bg-color);
+  --text-size: var(--helper-text-size);
+  --text-weight: var(--helper-text-weight);
+  --text-line-height: var(--helper-text-line-height);
+  --text-color: var(--helper-text-color);
+  font-size: var(--text-size);
+  font-weight: var(--text-weight);
+  line-height: var(--text-line-height);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+
+  &__icon {
+    --text-size: var(--helper-text-line-height);
+    font-size: var(--text-size);
+    color: var(--text-color);
+  }
+
+  &--error {
+    --text-color: var(--helper-feedback--error-text-color);
+    --opacity: var(--helper-feedback--error-opacity);
+    --bg-color: var(--helper-feedback--error-bg-color);
+    --border-color: var(--helper-feedback--error-border-color);
+  }
+
+  &--success {
+    --text-color: var(--helper-feedback--success-text-color);
+    --opacity: var(--helper-feedback--success-opacity);
+    --bg-color: var(--helper-feedback--success-bg-color);
+    --border-color: var(--helper-feedback--success-border-color);
+  }
+}
+
+.form-group {
+  --padding-top: var(--form-group-padding-top);
+  --padding-right: var(--form-group-padding-right);
+  --padding-bottom: var(--form-group-padding-bottom);
+  --padding-left: var(--form-group-padding-left);
+  --gap: var(--form-group-gap);
+  --border-radius-top-left: var(--form-group-border-radius-top-left);
+  --border-radius-top-right: var(--form-group-border-radius-top-right);
+  --border-radius-bottom-right: var(--form-group-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--form-group-border-radius-bottom-left);
+  --border-color: var(--form-group-border-color);
+  --border-style: solid;
+  --border-width-top: var(--form-group-border-width-top);
+  --border-width-right: var(--form-group-border-width-right);
+  --border-width-bottom: var(--form-group-border-width-bottom);
+  --border-width-left: var(--form-group-border-width-left);
+  --opacity: var(--form-group-opacity);
+  --bg-color: var(--form-group-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+}

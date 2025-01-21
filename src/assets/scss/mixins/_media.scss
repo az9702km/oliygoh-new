@@ -1,0 +1,19 @@
+@mixin media($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @error "Breakpoint '#{$breakpoint}' not found in \$breakpoints map.";
+  }
+}
+
+@mixin media-max($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @error "Breakpoint '#{$breakpoint}' not found in \$breakpoints map.";
+  }
+}

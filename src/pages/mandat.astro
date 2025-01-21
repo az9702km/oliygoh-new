@@ -1,0 +1,147 @@
+---
+import Card from "../components/Card.astro";
+import CardArticle from "../components/CardArticle.astro";
+import FormGroup from "../components/FormGroup.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import Button from "../components/shared/button.astro";
+import Table from "../components/Table.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="bg-surface-low py-2xl">
+    <div class="container">
+      <h1 class="section-title h4">
+        Mandat DTM uz 2024 yil uchun mandat natijalari va kirish ballari
+      </h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="section">
+            <div class="d-flex flex-column gap-y-lg">
+              <p>
+                Mandat 2024 natijalarini bilish uchun kerakli oliygoh, ta'lim
+                shaklini va tilini tanlang:
+              </p>
+              <FormGroup>
+                <Fragment slot="label">Viloyat</Fragment>
+                <select name="" id="">
+                  <option value="">Something new</option>
+                  <option value="">Something new</option>
+                  <option value="">Something new</option>
+                  <option value="">Something new</option>
+                </select>
+              </FormGroup>
+              <FormGroup>
+                <Fragment slot="label">Oliygoh</Fragment>
+                <select name="" id="">
+                  <option value="">Something new</option>
+                  <option value="">Something new</option>
+                  <option value="">Something new</option>
+                  <option value="">Something new</option>
+                </select>
+              </FormGroup>
+              <FormGroup>
+                <Fragment slot="label">Ta’lim shakli</Fragment>
+                <select name="" id="">
+                  <option value="">Something new</option>
+                  <option value="">Something new</option>
+                  <option value="">Something new</option>
+                  <option value="">Something new</option>
+                </select>
+              </FormGroup>
+              <FormGroup>
+                <Fragment slot="label">Ta’lim tili</Fragment>
+                <select name="" id="">
+                  <option value="">Something new</option>
+                  <option value="">Something new</option>
+                  <option value="">Something new</option>
+                  <option value="">Something new</option>
+                </select>
+              </FormGroup>
+              <Button style="secondary">
+                <i class="ti ti-x"></i> Filtrni tozalash</Button
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="section">
+            <Table>
+              <thead>
+                <tr>
+                  <th>Mutaxassislik</th>
+                  <th>Grant</th>
+                  <th>Kontrakt</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div>Menejment</div>
+                    <div class="text-on-surface-variant">
+                      60410800 / Matematika / Chet tili
+                    </div>
+                  </td>
+                  <td>168</td>
+                  <td>127.5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Menejment</div>
+                    <div class="text-on-surface-variant">
+                      60410800 / Matematika / Chet tili
+                    </div>
+                  </td>
+                  <td>168</td>
+                  <td>127.5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Menejment</div>
+                    <div class="text-on-surface-variant">
+                      60410800 / Matematika / Chet tili
+                    </div>
+                  </td>
+                  <td>168</td>
+                  <td>127.5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Menejment</div>
+                    <div class="text-on-surface-variant">
+                      60410800 / Matematika / Chet tili
+                    </div>
+                  </td>
+                  <td>168</td>
+                  <td>127.5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Menejment</div>
+                    <div class="text-on-surface-variant">
+                      60410800 / Matematika / Chet tili
+                    </div>
+                  </td>
+                  <td>168</td>
+                  <td>127.5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Menejment</div>
+                    <div class="text-on-surface-variant">
+                      60410800 / Matematika / Chet tili
+                    </div>
+                  </td>
+                  <td>168</td>
+                  <td>127.5</td>
+                </tr>
+              </tbody>
+            </Table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

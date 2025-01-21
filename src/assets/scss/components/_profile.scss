@@ -1,0 +1,158 @@
+.profile-total {
+  --padding-top: var(--profile-total-padding-top);
+  --padding-right: var(--profile-total-padding-right);
+  --padding-bottom: var(--profile-total-padding-bottom);
+  --padding-left: var(--profile-total-padding-left);
+  --gap: var(--profile-total-gap);
+  --border-radius-top-left: var(--profile-total-border-radius-top-left);
+  --border-radius-top-right: var(--profile-total-border-radius-top-right);
+  --border-radius-bottom-right: var(--profile-total-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--profile-total-border-radius-bottom-left);
+  --border-color: var(--profile-total-border-color);
+  --border-style: solid;
+  --border-width-top: var(--profile-total-border-width-top);
+  --border-width-right: var(--profile-total-border-width-right);
+  --border-width-bottom: var(--profile-total-border-width-bottom);
+  --border-width-left: var(--profile-total-border-width-left);
+  --opacity: var(--profile-total-opacity);
+  --bg-color: var(--profile-total-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+}
+
+.profile-avatar {
+  --padding-top: var(--profile-avatar-padding-top);
+  --padding-right: var(--profile-avatar-padding-right);
+  --padding-bottom: var(--profile-avatar-padding-bottom);
+  --padding-left: var(--profile-avatar-padding-left);
+  --gap: var(--profile-avatar-gap);
+  --border-radius-top-left: var(--profile-avatar-border-radius-top-left);
+  --border-radius-top-right: var(--profile-avatar-border-radius-top-right);
+  --border-radius-bottom-right: var(
+    --profile-avatar-border-radius-bottom-right
+  );
+  --border-radius-bottom-left: var(--profile-avatar-border-radius-bottom-left);
+  --border-color: var(--profile-avatar-border-color);
+  --border-style: solid;
+  --border-width-top: var(--profile-avatar-border-width-top);
+  --border-width-right: var(--profile-avatar-border-width-right);
+  --border-width-bottom: var(--profile-avatar-border-width-bottom);
+  --border-width-left: var(--profile-avatar-border-width-left);
+  --opacity: var(--profile-avatar-opacity);
+  --bg-color: var(--profile-avatar-bg-color);
+  display: inline-flex;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+  font-size: 4.5rem;
+}
+
+.profile-main-block {
+  --padding-top: var(--profile-main-block-padding-top);
+  --padding-right: var(--profile-main-block-padding-right);
+  --padding-bottom: var(--profile-main-block-padding-bottom);
+  --padding-left: var(--profile-main-block-padding-left);
+  --gap: var(--profile-main-block-gap);
+  --border-radius-top-left: var(--profile-main-block-border-radius-top-left);
+  --border-radius-top-right: var(--profile-main-block-border-radius-top-right);
+  --border-radius-bottom-right: var(
+    --profile-main-block-border-radius-bottom-right
+  );
+  --border-radius-bottom-left: var(
+    --profile-main-block-border-radius-bottom-left
+  );
+  --border-color: var(--profile-main-block-border-color);
+  --border-style: solid;
+  --border-width-top: var(--profile-main-block-border-width-top);
+  --border-width-right: var(--profile-main-block-border-width-right);
+  --border-width-bottom: var(--profile-main-block-border-width-bottom);
+  --border-width-left: var(--profile-main-block-border-width-left);
+  --opacity: var(--profile-main-block-opacity);
+  --bg-color: var(--profile-main-block-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+  text-align: center;
+
+  .profile-avatar {
+    align-self: center;
+  }
+
+  &__body {
+    --padding-top: var(--profile-main-block-_body-padding-top);
+    --padding-right: var(--profile-main-block-_body-padding-right);
+    --padding-bottom: var(--profile-main-block-_body-padding-bottom);
+    --padding-left: var(--profile-main-block-_body-padding-left);
+    --gap: var(--profile-main-block-_body-gap);
+    --border-radius-top-left: var(
+      --profile-main-block-_body-border-radius-top-left
+    );
+    --border-radius-top-right: var(
+      --profile-main-block-_body-border-radius-top-right
+    );
+    --border-radius-bottom-right: var(
+      --profile-main-block-_body-border-radius-bottom-right
+    );
+    --border-radius-bottom-left: var(
+      --profile-main-block-_body-border-radius-bottom-left
+    );
+    --border-color: var(--profile-main-block-_body-border-color);
+    --border-style: solid;
+    --border-width-top: var(--profile-main-block-_body-border-width-top);
+    --border-width-right: var(--profile-main-block-_body-border-width-right);
+    --border-width-bottom: var(--profile-main-block-_body-border-width-bottom);
+    --border-width-left: var(--profile-main-block-_body-border-width-left);
+    --opacity: var(--profile-main-block-_body-opacity);
+    --bg-color: var(--profile-main-block-_body-bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+      var(--padding-left);
+    border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+      var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+    border-top-width: var(--border-width-top);
+    border-right-width: var(--border-width-right);
+    border-bottom-width: var(--border-width-bottom);
+    border-left-width: var(--border-width-left);
+    border-color: var(--border-color);
+    border-style: var(--border-style);
+    opacity: var(--opacity);
+    background: var(--bg-color);
+  }
+}

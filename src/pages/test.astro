@@ -1,0 +1,142 @@
+---
+import Card from "../components/Card.astro";
+import Filter from "../components/Filter.astro";
+import FilterItem from "../components/FilterItem.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import TestAnswer from "../components/TestAnswer.astro";
+import TestProgress from "../components/TestProgress.astro";
+import TestQuiz from "../components/TestQuiz.astro";
+import TestTime from "../components/TestTime.astro";
+import Layout from "../layouts/Layout.astro";
+import LayoutEmpty from "../layouts/LayoutEmpty.astro";
+---
+
+<LayoutEmpty>
+  <TestProgress percent="67" fixed />
+  <main class="bg-surface-low py-2xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="test-header mb-2xl">
+            <h1 class="text-md text-center w-full">
+              Matematika <span class="text-on-surface-variant">(DTM_10321)</span
+              >
+            </h1>
+          </div>
+          <div class="d-flex flex-column gap-lg">
+            <TestQuiz>
+              <TestAnswer type="radio" id="answer1" name="name1">
+                <div class="text-medium">90</div>
+              </TestAnswer>
+              <TestAnswer type="radio" id="answer2" name="name1">
+                <div class="text-medium">80</div>
+              </TestAnswer>
+              <TestAnswer type="radio" id="answer3" name="name1">
+                <div class="text-medium">78</div>
+              </TestAnswer>
+              <TestAnswer type="radio" id="answer4" name="name1">
+                <div class="text-medium">85</div>
+              </TestAnswer>
+            </TestQuiz>
+            <TestQuiz>
+              <TestAnswer type="radio" id="answer11" name="name2">
+                <div class="text-medium">90</div>
+              </TestAnswer>
+              <TestAnswer type="radio" id="answer12" name="name2">
+                <div class="text-medium">80</div>
+              </TestAnswer>
+              <TestAnswer type="radio" id="answer13" name="name2">
+                <div class="text-medium">78</div>
+              </TestAnswer>
+              <TestAnswer type="radio" id="answer14" name="name2">
+                <div class="text-medium">85</div>
+              </TestAnswer>
+            </TestQuiz>
+            <TestQuiz>
+              <TestAnswer type="checkbox" id="answer21" name="name2">
+                <div class="text-medium">90</div>
+              </TestAnswer>
+              <TestAnswer type="checkbox" id="answer22" name="name2">
+                <div class="text-medium">80</div>
+              </TestAnswer>
+              <TestAnswer type="checkbox" id="answer23" name="name2">
+                <div class="text-medium">78</div>
+              </TestAnswer>
+              <TestAnswer type="checkbox" id="answer24" name="name2">
+                <div class="text-medium">85</div>
+              </TestAnswer>
+            </TestQuiz>
+            <TestQuiz>
+              <TestAnswer type="switch" id="answer31" name="name2">
+                <div class="text-medium">90</div>
+              </TestAnswer>
+              <TestAnswer type="switch" id="answer32" name="name2">
+                <div class="text-medium">80</div>
+              </TestAnswer>
+              <TestAnswer type="switch" id="answer33" name="name2">
+                <div class="text-medium">78</div>
+              </TestAnswer>
+              <TestAnswer type="switch" id="answer34" name="name2">
+                <div class="text-medium">85</div>
+              </TestAnswer>
+            </TestQuiz>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="position-sticky top-lg">
+            <div class="section mb-xl">
+              <div class="d-flex flex-column gap-lg">
+                <h2 class="h4">DTM online test topshirish 2025</h2>
+                <Pagination>
+                  <PaginationItem>1</PaginationItem>
+                  <PaginationItem>2</PaginationItem>
+                  <PaginationItem>3</PaginationItem>
+                  <PaginationItem>4</PaginationItem>
+                  <PaginationItem>5</PaginationItem>
+                  <PaginationItem>6</PaginationItem>
+                  <PaginationItem>7</PaginationItem>
+                  <PaginationItem>8</PaginationItem>
+                  <PaginationItem>9</PaginationItem>
+                  <PaginationItem>10</PaginationItem>
+                  <PaginationItem>11</PaginationItem>
+                  <PaginationItem>12</PaginationItem>
+                  <PaginationItem>13</PaginationItem>
+                  <PaginationItem>14</PaginationItem>
+                  <PaginationItem>15</PaginationItem>
+                  <PaginationItem>16</PaginationItem>
+                  <PaginationItem>17</PaginationItem>
+                  <PaginationItem>18</PaginationItem>
+                  <PaginationItem>19</PaginationItem>
+                  <PaginationItem>20</PaginationItem>
+                  <PaginationItem>21</PaginationItem>
+                  <PaginationItem>22</PaginationItem>
+                  <PaginationItem>23</PaginationItem>
+                  <PaginationItem>24</PaginationItem>
+                  <PaginationItem>25</PaginationItem>
+                  <PaginationItem>26</PaginationItem>
+                  <PaginationItem>27</PaginationItem>
+                  <PaginationItem>28</PaginationItem>
+                  <PaginationItem>29</PaginationItem>
+                  <PaginationItem>30</PaginationItem>
+                  <PaginationItem>31</PaginationItem>
+                  <PaginationItem>32</PaginationItem>
+                  <PaginationItem>33</PaginationItem>
+                  <PaginationItem>34</PaginationItem>
+                  <PaginationItem>35</PaginationItem>
+                  <PaginationItem>36</PaginationItem>
+                  <PaginationItem>37</PaginationItem>
+                  <PaginationItem>38</PaginationItem>
+                  <PaginationItem>39</PaginationItem>
+                  <PaginationItem>40</PaginationItem>
+                </Pagination>
+              </div>
+            </div>
+            <TestTime />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</LayoutEmpty>

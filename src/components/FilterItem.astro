@@ -1,0 +1,9 @@
+---
+const { active } = Astro.props;
+---
+
+<div class="filter-item" class:list={active && "active"}>
+  <a href="#!">
+    <slot />
+  </a>
+</div>

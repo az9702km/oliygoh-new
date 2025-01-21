@@ -1,0 +1,6 @@
+---
+const { type } = Astro.props;
+---
+
+<span class="detail-bullet" class:list={type && `detail-bullet--${type}`}
+></span>

@@ -1016,20 +1016,6 @@ template {
   background: var(--nav-bg-color, rgba(255, 255, 255, 0.00));
 }
 
-.nav {
-  display: flex;
-  padding: var(--nav-padding-top, 0rem) var(--nav-padding-right, 0rem) var(--nav-padding-bottom, 0rem) var(--nav-padding-left, 0rem);
-  align-items: flex-start;
-  gap: var(--nav-gap, 0rem);
-  border-radius: var(--nav-border-radius-radius-top-left, 0rem) var(--nav-border-radius-radius-top-right, 0rem) var(--nav-border-radius-radius-bottom-right, 0rem) var(--nav-border-radius-radius-bottom-left, 0rem);
-  border-top: var(--nav-border-width-top, 0px) solid var(--nav-border-color, rgba(255, 255, 255, 0.00));
-  border-right: var(--nav-border-width-right, 0px) solid var(--nav-border-color, rgba(255, 255, 255, 0.00));
-  border-bottom: var(--nav-border-width-bottom, 0px) solid var(--nav-border-color, rgba(255, 255, 255, 0.00));
-  border-left: var(--nav-border-width-left, 0px) solid var(--nav-border-color, rgba(255, 255, 255, 0.00));
-  opacity: var(--nav-opacity, 1);
-  background: var(--nav-bg-color, rgba(255, 255, 255, 0.00));
-}
-
 .nav .nav__link {
   display: inline-flex;
   padding: var(--navlink-padding-top, 0.5rem) var(--navlink-padding-right, 0.5rem) var(--navlink-padding-bottom, 0.5rem) var(--navlink-padding-left, 0.5rem);

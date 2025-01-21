@@ -1,0 +1,70 @@
+---
+import Card from "../components/Card.astro";
+import CardTest from "../components/CardTest.astro";
+import ExamMeta from "../components/ExamMeta.astro";
+import Filter from "../components/Filter.astro";
+import FilterItem from "../components/FilterItem.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="bg-surface-low py-2xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="section">
+            <h1 class="h3 mb-lg">Prezident maktabi testlari 2024</h1>
+            <p class="mb-lg">
+              PM imtihonlarining 1-bosqich saralash testiga tayyorgarlik ko'rish
+              uchun matematika va muammoli masalalarni hal qilish bo'yicha
+              namunaviy test savollaridan iborat onlayn imtihon topshiring.
+              Ushbu test savollari bilan al-Xorazmiy ixtisoslashtirilgan maktab
+              imtihonlariga ham tayyorgarlik ko'rishingiz mumkin.
+            </p>
+            <p class="mb-lg">
+              Prezident maktabi testlarini ishlash orqali bilmingizni sinab
+              ko'rishingiz mumkin. Ushbu prezident maktabi namunaviy test
+              savollari matematika fanidan muammoli masalalarni hal qilish
+              mavzusida 30 ta savoldan iborat. PM test bazasi jami 500 ga yaqin
+              test savollaridan iborat.
+            </p>
+            <p>
+              Ushbu sahifada esa <a href="#!" class="text-primary"
+                >Prezident maktabi ingliz tili namunaviy test savollari</a
+              > imtihonini topshirishingiz mumkin.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="position-sticky top-0">
+            <ExamMeta>
+              <div slot="header" class="text-center">
+                <b> Azamat</b>, ushbu imtihonda sizning natijangiz quyidagicha:
+              </div>
+              <div slot="footer" class="d-flex justify-content-center">
+                <a href="#!" class="btn btn--tertiary">Test natijasi</a>
+              </div>
+            </ExamMeta>
+            <section class="mt-xl section">
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#!" class="btn btn--primary w-full"
+                    >Imtihonni boshlash</a
+                  >
+                </div>
+                <div class="col-md-6">
+                  <a href="#!" class="btn btn--secondary w-full"
+                    >Natijalar jadvali <i class="ti ti-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

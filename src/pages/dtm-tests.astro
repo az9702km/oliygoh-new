@@ -1,0 +1,80 @@
+---
+import Card from "../components/Card.astro";
+import DetailBullet from "../components/DetailBullet.astro";
+import Filter from "../components/Filter.astro";
+import FilterItem from "../components/FilterItem.astro";
+import FormGroup from "../components/FormGroup.astro";
+import HeiList from "../components/HeiList.astro";
+import IconText from "../components/IconText.astro";
+import UniversityCard from "../components/UniversityCard.astro";
+import Input from "../components/Input.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import Layout from "../layouts/Layout.astro";
+import CardTest from "../components/CardTest.astro";
+---
+
+<Layout>
+  <main class="bg-surface-low py-2xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-start-lg-3 col-end-lg-9 col-12">
+          <h1 class="section-title h4">DTM Diagnostik testlar</h1>
+          <div class="d-flex flex-column gap-lg">
+            <CardTest classes="bg-primary-container border-primary"
+              >Respublika Diagnostik imtihon #73
+              <a href="#!" class="btn btn--primary" slot="btn">Qatnashish</a>
+            </CardTest>
+            <CardTest
+              >Respublika Diagnostik imtihon #73
+              <a href="#!" class="btn btn--primary" slot="btn">Natijalar</a>
+            </CardTest>
+            <CardTest
+              >Respublika Diagnostik imtihon #73
+              <a href="#!" class="btn btn--primary" slot="btn">Natijalar</a>
+            </CardTest>
+            <CardTest
+              >Respublika Diagnostik imtihon #73
+              <a href="#!" class="btn btn--primary" slot="btn">Natijalar</a>
+            </CardTest>
+            <CardTest
+              >Respublika Diagnostik imtihon #73
+              <a href="#!" class="btn btn--primary" slot="btn">Natijalar</a>
+            </CardTest>
+            <CardTest
+              >Respublika Diagnostik imtihon #73
+              <a href="#!" class="btn btn--primary" slot="btn">Natijalar</a>
+            </CardTest>
+            <CardTest
+              >Respublika Diagnostik imtihon #73
+              <a href="#!" class="btn btn--primary" slot="btn">Natijalar</a>
+            </CardTest>
+            <CardTest
+              >Respublika Diagnostik imtihon #73
+              <a href="#!" class="btn btn--primary" slot="btn">Natijalar</a>
+            </CardTest>
+            <CardTest
+              >Respublika Diagnostik imtihon #73
+              <a href="#!" class="btn btn--primary" slot="btn">Natijalar</a>
+            </CardTest>
+          </div>
+          <div class="d-flex justify-content-end pt-xl mt-sm">
+            <Pagination>
+              <PaginationItem>
+                <i class="ti ti-chevron-left"></i>
+              </PaginationItem>
+              <PaginationItem>1 </PaginationItem>
+              <PaginationItem active>2 </PaginationItem>
+              <PaginationItem>.. </PaginationItem>
+              <PaginationItem>4 </PaginationItem>
+              <PaginationItem>
+                <i class="ti ti-chevron-right"></i>
+              </PaginationItem>
+            </Pagination>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

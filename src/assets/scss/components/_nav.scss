@@ -1,0 +1,185 @@
+.nav {
+  --gap: var(--nav-gap);
+  --border-radius-radius-top-left: var(--nav-border-radius-radius-top-left);
+  --border-radius-radius-top-right: var(--nav-border-radius-radius-top-right);
+  --border-radius-radius-bottom-right: var(
+    --nav-border-radius-radius-bottom-right
+  );
+  --border-radius-radius-bottom-left: var(
+    --nav-border-radius-radius-bottom-left
+  );
+  --border-color: var(--nav-border-color);
+  --border-style: solid;
+  --border-width-top: var(--nav-border-width-top);
+  --border-width-right: var(--nav-border-width-top);
+  --border-width-bottom: var(--nav-border-width-top);
+  --border-width-left: var(--nav-border-width-top);
+  --opacity: var(--nav-opacity);
+  --bg-color: var(--nav-bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  align-items: flex-start;
+  gap: var(--gap);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+
+  @include media(md) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    --padding-top: var(--navlink-padding-top);
+    --padding-right: var(--navlink-padding-right);
+    --padding-bottom: var(--navlink-padding-bottom);
+    --padding-left: var(--navlink-padding-left);
+    --gap: var(--navlink-gap);
+    --border-radius-radius-top-left: var(
+      --navlink-border-radius-radius-top-left
+    );
+    --border-radius-radius-top-right: var(
+      --navlink-border-radius-radius-top-right
+    );
+    --border-radius-radius-bottom-right: var(
+      --navlink-border-radius-radius-bottom-right
+    );
+    --border-radius-radius-bottom-left: var(
+      --navlink-border-radius-radius-bottom-left
+    );
+    --border-style: solid;
+    --border-color: var(--navlink-border-color);
+    --border-width-top: var(--navlink-border-width-top);
+    --border-width-right: var(--navlink-border-width-top);
+    --border-width-bottom: var(--navlink-border-width-top);
+    --border-width-left: var(--navlink-border-width-top);
+    --opacity: var(--navlink-opacity);
+    --bg-color: var(--navlink-bg-color);
+    --text-color: var(--navlink-text-color);
+    --text-size: var(--navlink-text-size);
+    --text-weight: var(--navlink-text-weight);
+    --text-line-height: var(--navlink-text-line-height);
+    display: inline-flex;
+    padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+      var(--padding-left);
+    align-items: center;
+    text-decoration: none;
+    gap: var(--gap);
+    border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+      var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+    border-top-width: var(--border-width-top);
+    border-right-width: var(--border-width-right);
+    border-bottom-width: var(--border-width-bottom);
+    border-left-width: var(--border-width-left);
+    border-color: var(--border-color);
+    border-style: var(--border-style);
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--body-font-family-primary);
+    font-size: var(--text-size);
+    font-style: normal;
+    font-weight: var(--text-weight);
+    line-height: var(--text-line-height);
+
+    &:hover {
+      --border-color: var(--navlink-hover-border-color);
+      --bg-color: var(--navlink-hover-bg-color);
+    }
+  }
+}
+
+.navbar {
+  --padding-top: var(--navbar-padding-top);
+  --padding-right: var(--navbar-padding-right);
+  --padding-bottom: var(--navbar-padding-bottom);
+  --padding-left: var(--navbar-padding-left);
+  --gap: var(--navbar-gap);
+  --border-radius-radius-top-left: var(--navbar-border-radius-radius-top-left);
+  --border-radius-radius-top-right: var(
+    --navbar-border-radius-radius-top-right
+  );
+  --border-radius-radius-bottom-right: var(
+    --navbar-border-radius-radius-bottom-right
+  );
+  --border-radius-radius-bottom-left: var(
+    --navbar-border-radius-radius-bottom-left
+  );
+  --border-color: var(--navbar-border-color);
+  --border-width-top: var(--navbar-border-width-top);
+  --border-width-right: var(--navbar-border-width-top);
+  --border-width-bottom: var(--navbar-border-width-top);
+  --border-width-left: var(--navbar-border-width-top);
+  --opacity: var(--navbar-opacity);
+  --bg-color: var(--navbar-bg-color);
+  display: flex;
+  padding: var(--navbar-padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  flex-direction: column;
+  gap: var(--gap);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+
+  &__inner {
+    --padding-top: var(--navbar-_inner-padding-top);
+    --padding-right: var(--navbar-_inner-padding-right);
+    --padding-bottom: var(--navbar-_inner-padding-bottom);
+    --padding-left: var(--navbar-_inner-padding-left);
+    --gap: var(--navbar-_inner-gap);
+    padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+      var(--padding-left);
+    gap: var(--gap);
+  }
+}
+
+.navbar .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  width: 320px;
+  --padding-top: var(--body-padding-xl);
+  --padding-right: var(--body-padding-xl);
+  --padding-bottom: var(--body-padding-xl);
+  --padding-left: var(--body-padding-xl);
+  background-color: var(--navbar-bg-color);
+  align-items: stretch;
+  z-index: 100;
+  transition: 0.2s all ease-in-out;
+
+  &.show {
+    transform: translateX(0);
+    transition: 0.2s all ease-in-out;
+  }
+
+  .nav__link {
+    justify-content: space-between;
+  }
+
+  @include media(md) {
+    transform: translate(0);
+    position: static;
+    width: unset;
+    --padding-top: var(--nav-padding-top);
+    --padding-right: var(--nav-padding-right);
+    --padding-bottom: var(--nav-padding-bottom);
+    --padding-left: var(--nav-padding-left);
+  }
+}

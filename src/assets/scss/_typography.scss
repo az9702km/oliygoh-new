@@ -1,0 +1,60 @@
+html {
+  font-family: var(--font-family-primary), sans-serif;
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body {
+  margin: 0;
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-lh-body-md);
+  color: var(--body-colors-text-on-surface);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--body-font-weight-system-header);
+  margin: 0;
+}
+.h6,
+h6 {
+  font-size: var(--body-font-size-header-h6);
+  line-height: var(--body-font-lh-header-h6);
+}
+
+.h5,
+h5 {
+  font-size: var(--body-font-size-header-h5);
+  line-height: var(--body-font-lh-header-h5);
+}
+
+.h4,
+h4 {
+  font-size: var(--body-font-size-header-h4);
+  line-height: var(--body-font-lh-header-h4);
+}
+
+.h3,
+h3 {
+  font-size: var(--body-font-size-header-h3);
+  line-height: var(--body-font-lh-header-h3);
+}
+
+.h2,
+h2 {
+  font-size: var(--body-font-size-header-h2);
+  line-height: var(--body-font-lh-header-h2);
+}
+
+.h1,
+h1 {
+  font-size: var(--body-font-size-header-h1);
+  line-height: var(--body-font-lh-header-h1);
+}

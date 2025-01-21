@@ -1,0 +1,155 @@
+---
+import Card from "../components/Card.astro";
+import CardArticle from "../components/CardArticle.astro";
+import FormGroup from "../components/FormGroup.astro";
+import IconCard from "../components/IconCard.astro";
+import InputToggle from "../components/InputToggle.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import ProfileMainBlock from "../components/ProfileMainBlock.astro";
+import ProfileNav from "../components/ProfileNav.astro";
+import ProfileTotal from "../components/ProfileTotal.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="bg-surface-low py-2xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="section">
+            <ProfileMainBlock />
+            <ProfileTotal />
+            <ProfileNav>
+              <a href="#!" class="nav-item">
+                <i class="ti ti-award"></i> Natijalarim</a
+              >
+              <a href="#!" class="nav-item active">
+                <i class="ti ti-settings"></i> Sozlamalar</a
+              >
+              <a href="#!" class="nav-item">
+                <i class="ti ti-logout"></i> Chiqish</a
+              >
+            </ProfileNav>
+            <IconCard />
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="section mb-xl">
+            <h4 class="h4 mb-lg">Sozlamalar</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <FormGroup>
+                  <Fragment slot="label">Ism-sharifingiz</Fragment>
+                  <input type="text" />
+                </FormGroup>
+              </div>
+              <div class="col-md-6">
+                <FormGroup>
+                  <Fragment slot="label">Ism-sharifingiz</Fragment>
+                  <input type="text" />
+                </FormGroup>
+              </div>
+              <div class="col-md-12">
+                <InputToggle type="checkbox" custom
+                  >Parolni o'zgartirish</InputToggle
+                >
+              </div>
+              <div class="col-md-6">
+                <FormGroup>
+                  <Fragment slot="label">Yangi parol</Fragment>
+                  <input type="password" disabled />
+                </FormGroup>
+              </div>
+              <div class="col-md-6">
+                <FormGroup>
+                  <Fragment slot="label">Parol tasdig’i</Fragment>
+                  <input type="password" disabled />
+                </FormGroup>
+              </div>
+            </div>
+          </div>
+          <div class="section mb-xl">
+            <h4 class="h4 mb-lg">Qo'shimcha ma'lumotlar</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <FormGroup>
+                  <Fragment slot="label">Viloyat</Fragment>
+                  <select name="" id="">
+                    <option value="">some option 1</option>
+                    <option value="">some option 2</option>
+                    <option value="">some option 3</option>
+                    <option value="">some option 4</option>
+                  </select>
+                </FormGroup>
+              </div>
+              <div class="col-md-6">
+                <FormGroup>
+                  <Fragment slot="label">O'qish yoki yashash hududi</Fragment>
+                  <select name="" id="">
+                    <option value="">some option 1</option>
+                    <option value="">some option 2</option>
+                    <option value="">some option 3</option>
+                    <option value="">some option 4</option>
+                  </select>
+                </FormGroup>
+              </div>
+              <div class="col-md-12">
+                <FormGroup>
+                  <Fragment slot="label">Toifangiz</Fragment>
+                  <select name="" id="">
+                    <option value="">some option 1</option>
+                    <option value="">some option 2</option>
+                    <option value="">some option 3</option>
+                    <option value="">some option 4</option>
+                  </select>
+                </FormGroup>
+              </div>
+              <div class="col-md-6">
+                <FormGroup>
+                  <Fragment slot="label">Yoshingiz</Fragment>
+                  <input type="number" />
+                </FormGroup>
+              </div>
+              <div class="col-md-6">
+                <FormGroup>
+                  <Fragment slot="label">Jinsingiz</Fragment>
+                  <select name="" id="">
+                    <option value="">Erkak</option>
+                    <option value="">Ayol</option>
+                  </select>
+                </FormGroup>
+              </div>
+            </div>
+          </div>
+          <div class="section mb-xl">
+            <h4 class="h4 mb-lg">Telegram Profil</h4>
+            <div class="row mb-lg">
+              <div class="col-md-6">
+                <FormGroup>
+                  <Fragment slot="label">Telegram User</Fragment>
+                  <input type="text" />
+                </FormGroup>
+              </div>
+              <div class="col-md-6">
+                <FormGroup>
+                  <Fragment slot="label">Telegram ID</Fragment>
+                  <input type="text" />
+                </FormGroup>
+              </div>
+            </div>
+            <h4 class="h4 mb-lg">Akkountni o'chirish</h4>
+            <p>
+              Tizimda foydalanuvchi akkountini o'chirish uchun <a href="#!"
+                >ushbu</a
+              >
+              havolaga bosing. Diqqat! Ushbu harakat natijasida akkount va uning
+              ma'lumotlari qayta tiklanmaydi!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

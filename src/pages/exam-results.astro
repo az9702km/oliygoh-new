@@ -1,0 +1,310 @@
+---
+import Card from "../components/Card.astro";
+import CardArticle from "../components/CardArticle.astro";
+import FormGroup from "../components/FormGroup.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import Table from "../components/Table.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="bg-surface-low py-2xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <FormGroup>
+            <Fragment slot="label">Mutaxassassislik </Fragment>
+            <select name="" id="">
+              <option value="">Namangan</option>
+              <option value="">Toshkent</option>
+              <option value="">Jizzax</option>
+              <option value="">Samarqand</option>
+            </select>
+          </FormGroup>
+        </div>
+        <div class="col-md-3">
+          <FormGroup>
+            <Fragment slot="label">1-fan </Fragment>
+            <select name="" id="">
+              <option value="">Rus tili</option>
+              <option value="">Matematika</option>
+              <option value="">Fizika</option>
+              <option value="">Kimyo</option>
+            </select>
+          </FormGroup>
+        </div>
+        <div class="col-md-3">
+          <FormGroup>
+            <Fragment slot="label">2-fan </Fragment>
+            <select name="" id="">
+              <option value="">Rus tili</option>
+              <option value="">Matematika</option>
+              <option value="">Fizika</option>
+              <option value="">Kimyo</option>
+            </select>
+          </FormGroup>
+        </div>
+      </div>
+      <div class="section mt-xl">
+        <Table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Ishtirokchi</th>
+              <th>1-fan</th>
+              <th>2-fan</th>
+              <th>3-fan</th>
+              <th>Ball</th>
+              <th class="text-end">Yakunlandi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <div>***</div>
+                <div class="text-on-surface-variant">Abdumannonov Ziyodullanon</div>
+              </td>
+              <td>
+                <div>84</div>
+                <div class="text-on-surface-variant">Matematika</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">Fizika</div>
+              </td>
+              <td>
+                <div>1233</div>
+                <div class="text-on-surface-variant">Majburiy</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">60610300 / Matematika</div>
+              </td>
+              <td class="text-end">
+                <div>19:07</div>
+                <div class="text-on-surface-variant">03-yanvar</div>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <div>***</div>
+                <div class="text-on-surface-variant">8178089782</div>
+              </td>
+              <td>
+                <div>84</div>
+                <div class="text-on-surface-variant">Matematika</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">Fizika</div>
+              </td>
+              <td>
+                <div>1233</div>
+                <div class="text-on-surface-variant">Majburiy</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">60610300 / Matematika</div>
+              </td>
+              <td class="text-end">
+                <div>19:07</div>
+                <div class="text-on-surface-variant">03-yanvar</div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <div>***</div>
+                <div class="text-on-surface-variant">8178089782</div>
+              </td>
+              <td>
+                <div>84</div>
+                <div class="text-on-surface-variant">Matematika</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">Fizika</div>
+              </td>
+              <td>
+                <div>1233</div>
+                <div class="text-on-surface-variant">Majburiy</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">60610300 / Matematika</div>
+              </td>
+              <td class="text-end">
+                <div>19:07</div>
+                <div class="text-on-surface-variant">03-yanvar</div>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <div>***</div>
+                <div class="text-on-surface-variant">8178089782</div>
+              </td>
+              <td>
+                <div>84</div>
+                <div class="text-on-surface-variant">Matematika</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">Fizika</div>
+              </td>
+              <td>
+                <div>1233</div>
+                <div class="text-on-surface-variant">Majburiy</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">60610300 / Matematika</div>
+              </td>
+              <td class="text-end">
+                <div>19:07</div>
+                <div class="text-on-surface-variant">03-yanvar</div>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                <div>***</div>
+                <div class="text-on-surface-variant">8178089782</div>
+              </td>
+              <td>
+                <div>84</div>
+                <div class="text-on-surface-variant">Matematika</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">Fizika</div>
+              </td>
+              <td>
+                <div>1233</div>
+                <div class="text-on-surface-variant">Majburiy</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">60610300 / Matematika</div>
+              </td>
+              <td class="text-end">
+                <div>19:07</div>
+                <div class="text-on-surface-variant">03-yanvar</div>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>
+                <div>***</div>
+                <div class="text-on-surface-variant">8178089782</div>
+              </td>
+              <td>
+                <div>84</div>
+                <div class="text-on-surface-variant">Matematika</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">Fizika</div>
+              </td>
+              <td>
+                <div>1233</div>
+                <div class="text-on-surface-variant">Majburiy</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">60610300 / Matematika</div>
+              </td>
+              <td class="text-end">
+                <div>19:07</div>
+                <div class="text-on-surface-variant">03-yanvar</div>
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>
+                <div>***</div>
+                <div class="text-on-surface-variant">8178089782</div>
+              </td>
+              <td>
+                <div>84</div>
+                <div class="text-on-surface-variant">Matematika</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">Fizika</div>
+              </td>
+              <td>
+                <div>1233</div>
+                <div class="text-on-surface-variant">Majburiy</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">60610300 / Matematika</div>
+              </td>
+              <td class="text-end">
+                <div>19:07</div>
+                <div class="text-on-surface-variant">03-yanvar</div>
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>
+                <div>***</div>
+                <div class="text-on-surface-variant">8178089782</div>
+              </td>
+              <td>
+                <div>84</div>
+                <div class="text-on-surface-variant">Matematika</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">Fizika</div>
+              </td>
+              <td>
+                <div>1233</div>
+                <div class="text-on-surface-variant">Majburiy</div>
+              </td>
+              <td>
+                <div>123</div>
+                <div class="text-on-surface-variant">60610300 / Matematika</div>
+              </td>
+              <td class="text-end">
+                <div>19:07</div>
+                <div class="text-on-surface-variant">03-yanvar</div>
+              </td>
+            </tr>
+          </tbody>
+        </Table>
+        <div
+          class="d-flex flex-column gap-lg mt-xl pt-xl text-center align-items-center">
+          <p class="text-on-surface-variant">
+            Natijalar <b>1-50</b> / Jami <b>24 027</b> ta
+          </p>
+          <Pagination>
+            <PaginationItem>
+              <i class="ti ti-chevron-left"></i>
+            </PaginationItem>
+            <PaginationItem>1 </PaginationItem>
+            <PaginationItem active>2 </PaginationItem>
+            <PaginationItem>.. </PaginationItem>
+            <PaginationItem>4 </PaginationItem>
+            <PaginationItem>
+              <i class="ti ti-chevron-right"></i>
+            </PaginationItem>
+          </Pagination>
+        </div>
+      </div>
+      <section class="section">
+        <div class="d-flex justify-content-center">
+          <a href="#!" class="btn btn--secondary">
+            <i class="ti ti-arrow-left"></i> Test sahifasi</a
+          >
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>

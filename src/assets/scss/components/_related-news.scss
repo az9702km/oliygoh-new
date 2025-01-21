@@ -1,0 +1,107 @@
+.related-news {
+  --padding-top: var(--related-news-padding-top);
+  --padding-right: var(--related-news-padding-right);
+  --padding-bottom: var(--related-news-padding-bottom);
+  --padding-left: var(--related-news-padding-left);
+  --gap: var(--related-news-gap);
+  --border-radius-top-left: var(--related-news-border-radius-top-left);
+  --border-radius-top-right: var(--related-news-border-radius-top-right);
+  --border-radius-bottom-right: var(--related-news-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--related-news-border-radius-bottom-left);
+  --border-color: var(--related-news-border-color);
+  --border-style: solid;
+  --border-width-top: var(--related-news-border-width-top);
+  --border-width-right: var(--related-news-border-width-right);
+  --border-width-bottom: var(--related-news-border-width-bottom);
+  --border-width-left: var(--related-news-border-width-left);
+  --opacity: var(--related-news-opacity);
+  --bg-color: var(--related-news-bg-color);
+  display: flex;
+  align-items: flex-start;
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  gap: var(--gap);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.related-news.related-news--vertical {
+  --padding-top: var(--related-news--vertical-padding-top);
+  --padding-right: var(--related-news--vertical-padding-right);
+  --padding-bottom: var(--related-news--vertical-padding-bottom);
+  --padding-left: var(--related-news--vertical-padding-left);
+  --gap: var(--related-news--vertical-gap);
+  --border-radius-top-left: var(
+    --related-news--vertical-border-radius-top-left
+  );
+  --border-radius-top-right: var(
+    --related-news--vertical-border-radius-top-right
+  );
+  --border-radius-bottom-right: var(
+    --related-news--vertical-border-radius-bottom-right
+  );
+  --border-radius-bottom-left: var(
+    --related-news--vertical-border-radius-bottom-left
+  );
+  --border-color: var(--related-news--vertical-border-color);
+  --border-style: solid;
+  --border-width-top: var(--related-news--vertical-border-width-top);
+  --border-width-right: var(--related-news--vertical-border-width-right);
+  --border-width-bottom: var(--related-news--vertical-border-width-bottom);
+  --border-width-left: var(--related-news--vertical-border-width-left);
+  --opacity: var(--related-news--vertical-opacity);
+  --bg-color: var(--related-news--vertical-bg-color);
+  flex-direction: column;
+}
+
+.related-news-list {
+  --padding-top: var(--news-list-padding-top);
+  --padding-right: var(--news-list-padding-right);
+  --padding-bottom: var(--news-list-padding-bottom);
+  --padding-left: var(--news-list-padding-left);
+  --gap: var(--news-list-gap);
+  --border-radius-top-left: var(--news-list-border-radius-top-left);
+  --border-radius-top-right: var(--news-list-border-radius-top-right);
+  --border-radius-bottom-right: var(--news-list-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--news-list-border-radius-bottom-left);
+  --border-color: var(--news-list-border-color);
+  --border-style: solid;
+  --border-width-top: var(--news-list-border-width-top);
+  --border-width-right: var(--news-list-border-width-right);
+  --border-width-bottom: var(--news-list-border-width-bottom);
+  --border-width-left: var(--news-list-border-width-left);
+  --opacity: var(--news-list-opacity);
+  --bg-color: var(--news-list-bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+}
+
+.related-news-list > *:not(:first-child) {
+  margin-top: var(--news-list-gap);
+}

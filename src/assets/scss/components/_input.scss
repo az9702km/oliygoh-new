@@ -1,0 +1,174 @@
+.input {
+  --padding-top: var(--input-padding-top);
+  --padding-right: var(--input-padding-right);
+  --padding-bottom: var(--input-padding-bottom);
+  --padding-left: var(--input-padding-left);
+  --border-radius-top-left: var(--input-border-radius-top-left);
+  --border-radius-top-right: var(--input-border-radius-top-right);
+  --border-radius-bottom-right: var(--input-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--input-border-radius-bottom-left);
+  --border-color: var(--input-border-color);
+  --border-style: solid;
+  --border-width-top: var(--input-border-width-top);
+  --border-width-right: var(--input-border-width-right);
+  --border-width-bottom: var(--input-border-width-bottom);
+  --border-width-left: var(--input-border-width-left);
+  --opacity: var(--input-opacity);
+  --bg-color: var(--input-bg-color);
+  --text-size: var(--input-text-size);
+  --text-weight: var(--input-text-weight);
+  --text-line-height: var(--input-text-line-height);
+  display: inline-flex;
+  align-items: center;
+
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+  font-size: var(--text-size);
+  font-weight: var(--text-weight);
+  line-height: var(--text-line-height);
+
+  &::placeholder {
+    --text-color: var(--input--placeholder-text-color);
+  }
+
+  &:has(input:active),
+  &:has(input:focus),
+  &:has(textarea:active),
+  &:has(textarea:focus),
+  &:has(select:active),
+  &:has(select:focus) {
+    --border-color: var(--colors-system-primary);
+    outline-color: var(--colors-system-primary);
+    outline-offset: 1px;
+    outline-width: 2px;
+    outline-style: solid;
+  }
+
+  input:disabled {
+    --bg-color: var(--colors-system-surface-high);
+  }
+
+  // &:has(input:not([type="text"]) input:not([type="password"]) input:not([type="password"])) {
+  &:has(input:not([type="text"], [type="password"], [type="number"])) {
+    --border-width-top: var(--body-border-null);
+    --border-width-right: var(--body-border-null);
+    --border-width-bottom: var(--body-border-null);
+    --border-width-left: var(--body-border-null);
+  }
+
+  input,
+  textarea,
+  select {
+    padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+      var(--padding-left);
+    border: none;
+    flex-grow: 1;
+    background-color: var(--bg-color);
+    font-size: var(--text-size);
+    font-weight: var(--text-weight);
+    line-height: var(--text-line-height);
+
+    &:active,
+    &:focus,
+    &:focus-within {
+      outline: none;
+    }
+  }
+
+  &--sm {
+    --padding-top: var(--input--size-sm-padding-top);
+    --padding-right: var(--input--size-sm-padding-right);
+    --padding-bottom: var(--input--size-sm-padding-bottom);
+    --padding-left: var(--input--size-sm-padding-left);
+    --text-size: var(--input--size-sm-text-size);
+    --text-line-height: var(--input--size-sm-text-line-height);
+  }
+
+  &--lg {
+    --padding-top: var(--input--size-lg-padding-top);
+    --padding-right: var(--input--size-lg-padding-right);
+    --padding-bottom: var(--input--size-lg-padding-bottom);
+    --padding-left: var(--input--size-lg-padding-left);
+    --text-size: var(--input--size-lg-text-size);
+    --text-line-height: var(--input--size-lg-text-line-height);
+  }
+
+  .btn {
+    border: none;
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.input-addon {
+  --padding-top: var(--input-addon-padding-top);
+  --padding-right: var(--input-addon-padding-right);
+  --padding-bottom: var(--input-addon-padding-bottom);
+  --padding-left: var(--input-addon-padding-left);
+  --gap: var(--input-addon-gap);
+  --border-radius-top-left: var(--input-addon-border-radius-top-left);
+  --border-radius-top-right: var(--input-addon-border-radius-top-right);
+  --border-radius-bottom-right: var(--input-addon-border-radius-bottom-right);
+  --border-radius-bottom-left: var(--input-addon-border-radius-bottom-left);
+  --border-color: var(--input-addon-border-color);
+  --border-style: solid;
+  --border-width-top: var(--input-addon-border-width-top);
+  --border-width-right: var(--input-addon-border-width-right);
+  --border-width-bottom: var(--input-addon-border-width-bottom);
+  --border-width-left: var(--input-addon-border-width-left);
+  --opacity: var(--input-addon-opacity);
+  --bg-color: var(--input-addon-bg-color);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap);
+  padding: var(--padding-top) var(--padding-right) var(--padding-bottom)
+    var(--padding-left);
+  border-radius: var(--border-radius-top-left) var(--border-radius-top-right)
+    var(--border-radius-bottom-right) var(--border-radius-bottom-left);
+  border-top-width: var(--border-width-top);
+  border-right-width: var(--border-width-right);
+  border-bottom-width: var(--border-width-bottom);
+  border-left-width: var(--border-width-left);
+  border-color: var(--border-color);
+  border-style: var(--border-style);
+  opacity: var(--opacity);
+  background: var(--bg-color);
+  font-size: var(--text-size);
+  font-weight: var(--text-weight);
+  line-height: var(--text-line-height);
+
+  &:has(+ input) {
+    padding-right: 0;
+  }
+
+  &--sm {
+    --padding-top: var(--input-addon--size-sm-padding-top);
+    --padding-right: var(--input-addon--size-sm-padding-right);
+    --padding-bottom: var(--input-addon--size-sm-padding-bottom);
+    --padding-left: var(--input-addon--size-sm-padding-left);
+    --text-size: var(--input-addon--size-sm-text-size);
+    --text-line-height: var(--input-addon--size-sm-text-line-height);
+  }
+
+  &--lg {
+    --padding-top: var(--input-addon--size-lg-padding-top);
+    --padding-right: var(--input-addon--size-lg-padding-right);
+    --padding-bottom: var(--input-addon--size-lg-padding-bottom);
+    --padding-left: var(--input-addon--size-lg-padding-left);
+    --text-size: var(--input-addon--size-lg-text-size);
+    --text-line-height: var(--input-addon--size-lg-text-line-height);
+  }
+}
+
+input + .input-addon {
+  padding-left: 0;
+}

@@ -1,0 +1,13 @@
+---
+import Input from "./Input.astro";
+
+const { id, size } = Astro.props;
+---
+
+<div class="form-group">
+  <label for={id}><slot name="label" /></label>
+  <Input size={size}>
+    <slot />
+  </Input>
+  <slot name="helper" />
+</div>

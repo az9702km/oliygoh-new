@@ -1,0 +1,45 @@
+---
+import BrandLogo from "../components/BrandLogo.astro";
+import Card from "../components/Card.astro";
+import Filter from "../components/Filter.astro";
+import FilterItem from "../components/FilterItem.astro";
+import Pagination from "../components/Pagination.astro";
+import PaginationItem from "../components/PaginationItem.astro";
+import PopCardList from "../components/PopCardList.astro";
+import TestAnswer from "../components/TestAnswer.astro";
+import TestProgress from "../components/TestProgress.astro";
+import TestQuiz from "../components/TestQuiz.astro";
+import TestTime from "../components/TestTime.astro";
+import Layout from "../layouts/Layout.astro";
+import LayoutEmpty from "../layouts/LayoutEmpty.astro";
+---
+
+<LayoutEmpty>
+  <main class="bg-primary-container py-2xl" style="min-height: 100vh;">
+    <div class="container mt-2xl">
+      <div class="row mt-2xl">
+        <div class="col-start-md-3 col-end-md-9 col-12 mt-2xl">
+          <div class="section mb-sm">
+            <div class="d-flex flex-column align-items-center">
+              <div class="logo mb-lg">
+                <BrandLogo height="44" />
+              </div>
+              <div class="text-lg">
+                Sayt imkoniyatlaridan to'liq foydalanish uchun profilingizga
+                kiring
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="d-flex flex-column align-items-center">
+              <div class="text-lg mb-lg">Telegram orqali kirish</div>
+              <a href="#!" class="btn btn--primary">
+                <i class="ti ti-brand-telegram"></i> Login with Telegram</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</LayoutEmpty>

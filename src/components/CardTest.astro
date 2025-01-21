@@ -1,0 +1,25 @@
+---
+const { classes } = Astro.props;
+---
+
+<div class="test-card" class:list={[classes]}>
+  <div class="test-card__body">
+    <div class="test-card__title">
+      <div class="text-sm text-on-surface-variant">17-apr, 18:00</div>
+      <a href="/test" class="text-lg text-on-surface text-decoration-none">
+        <slot />
+      </a>
+    </div>
+    <div class="d-flex gap-sm">
+      <div class="icon-text test-card__meta">
+        <i class="ti ti-notebook text-info icon-text__icon"></i>
+        <span class="text-on-surface-variant"> <b>20</b> ta savol</span>
+      </div>
+      <div class="icon-text test-card__meta">
+        <i class="ti ti-user text-primary icon-text__icon"></i>
+        <span class="text-on-surface-variant"> <b>6 536</b> ishtirokchi</span>
+      </div>
+    </div>
+  </div>
+  <slot name="btn" />
+</div>

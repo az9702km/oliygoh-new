@@ -1,0 +1,17 @@
+---
+const { id, type, name } = Astro.props;
+---
+
+<div class="answer">
+  <div class="answer__check">
+    <input
+      id={id}
+      name={name}
+      type={type === "switch" ? "checkbox" : type}
+      class=`custom-${type}`
+    />
+  </div>
+  <label for={id} class="answer__content">
+    <slot />
+  </label>
+</div>

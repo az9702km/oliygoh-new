@@ -1,0 +1,9 @@
+---
+const { custom, type } = Astro.props;
+const attr = custom && { class: "custom-checkbox" };
+---
+
+<div class="toggle-input">
+  <input id="for" type={type === "switch" ? "checkbox" : type} {...attr} />
+  <label for="for"><slot /></label>
+</div>
